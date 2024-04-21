@@ -1,6 +1,10 @@
 {
-.appVersion = "3258";
+.appVersion = "3259";
 .formatVersion = 3;
+DisplayStrings = (
+"AÀ",
+B
+);
 date = "2024-04-19 11:50:45 +0000";
 familyName = Brokken;
 fontMaster = (
@@ -28,6 +32,12 @@ pos = -300;
 }
 );
 name = Regular;
+stemValues = (
+230,
+195,
+200,
+146
+);
 userData = {
 GSCornerRadius = 15;
 GSExtrudeAngle = 30;
@@ -170,6 +180,7 @@ unicode = 196;
 },
 {
 glyphname = Agrave;
+lastChange = "2024-04-21 09:41:19 +0000";
 layers = (
 {
 layerId = m01;
@@ -321,7 +332,7 @@ unicode = 67;
 },
 {
 glyphname = Ccaron;
-lastChange = "2024-04-20 12:12:31 +0000";
+lastChange = "2024-04-21 10:08:15 +0000";
 layers = (
 {
 layerId = m01;
@@ -337,7 +348,7 @@ ref = caron;
 width = 668;
 }
 );
-unicode = 268;
+unicode = (268,269);
 },
 {
 glyphname = Ccedilla;
@@ -489,6 +500,7 @@ unicode = 69;
 },
 {
 glyphname = Eacute;
+lastChange = "2024-04-21 10:08:15 +0000";
 layers = (
 {
 layerId = m01;
@@ -504,10 +516,11 @@ ref = acute;
 width = 668;
 }
 );
-unicode = 201;
+unicode = (201,233);
 },
 {
 glyphname = Ecircumflex;
+lastChange = "2024-04-21 10:08:15 +0000";
 layers = (
 {
 layerId = m01;
@@ -523,11 +536,11 @@ ref = circumflex;
 width = 668;
 }
 );
-unicode = 202;
+unicode = (202,234);
 },
 {
 glyphname = Egrave;
-lastChange = "2024-04-20 11:51:32 +0000";
+lastChange = "2024-04-21 10:08:15 +0000";
 layers = (
 {
 layerId = m01;
@@ -543,7 +556,7 @@ ref = grave;
 width = 668;
 }
 );
-unicode = 200;
+unicode = (200,232);
 },
 {
 glyphname = F;
@@ -1659,6 +1672,7 @@ unicode = 85;
 },
 {
 glyphname = Uacute;
+lastChange = "2024-04-21 10:08:15 +0000";
 layers = (
 {
 layerId = m01;
@@ -1674,7 +1688,7 @@ ref = acute;
 width = 780;
 }
 );
-unicode = 218;
+unicode = (218,250);
 },
 {
 glyphname = Ucircumflex;
@@ -1717,6 +1731,7 @@ unicode = 220;
 },
 {
 glyphname = Ugrave;
+lastChange = "2024-04-21 10:08:15 +0000";
 layers = (
 {
 layerId = m01;
@@ -1732,7 +1747,7 @@ ref = grave;
 width = 780;
 }
 );
-unicode = 217;
+unicode = (217,249);
 },
 {
 glyphname = V;
@@ -3170,21 +3185,21 @@ unicode = 109;
 },
 {
 glyphname = n;
-lastChange = "2024-04-20 13:54:37 +0000";
+lastChange = "2024-04-21 09:40:51 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (677,0);
+pos = (777,0);
 },
 {
 name = right;
-pos = (1048,413);
+pos = (1148,413);
 },
 {
 name = top;
-pos = (677,650);
+pos = (777,650);
 }
 );
 layerId = m01;
@@ -3192,41 +3207,41 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(640,178,l),
-(657,635,l),
-(502,660,l),
-(400,651,l),
-(310,516,l),
-(309,474,l),
-(402,530,l),
-(431,517,l),
-(447,145,l),
-(431,-12,l),
-(597,12,l),
-(646,54,l),
-(677,81,l)
+(740,178,l),
+(757,635,l),
+(602,660,l),
+(500,651,l),
+(410,516,l),
+(409,474,l),
+(502,530,l),
+(531,517,l),
+(547,145,l),
+(531,-12,l),
+(697,12,l),
+(746,54,l),
+(777,81,l)
 );
 },
 {
 closed = 1;
 nodes = (
-(379,9,l),
-(377,99,l),
-(322,175,l),
-(323,407,l),
-(332,652,l),
-(26,600,l),
-(15,503,l),
-(46,459,l),
-(93,445,l),
-(92,157,l),
-(52,113,l),
-(52,31,l),
-(123,-32,l)
+(479,9,l),
+(477,99,l),
+(422,175,l),
+(423,407,l),
+(432,652,l),
+(126,600,l),
+(115,503,l),
+(146,459,l),
+(193,445,l),
+(192,157,l),
+(152,113,l),
+(152,31,l),
+(223,-32,l)
 );
 }
 );
-width = 677;
+width = 877;
 }
 );
 unicode = 110;
@@ -4048,7 +4063,7 @@ unicode = 119;
 },
 {
 glyphname = x;
-lastChange = "2024-04-20 17:17:21 +0000";
+lastChange = "2024-04-21 09:36:38 +0000";
 layers = (
 {
 layerId = m01;
@@ -4105,7 +4120,7 @@ nodes = (
 );
 }
 );
-width = 1077;
+width = 715;
 }
 );
 unicode = 120;
@@ -5693,7 +5708,7 @@ unicode = 184;
 {
 export = 0;
 glyphname = _i;
-lastChange = "2024-04-20 13:50:37 +0000";
+lastChange = "2024-04-21 10:08:15 +0000";
 layers = (
 {
 anchors = (
@@ -5730,7 +5745,7 @@ width = 677;
 {
 export = 0;
 glyphname = _n;
-lastChange = "2024-04-20 13:50:44 +0000";
+lastChange = "2024-04-21 10:08:15 +0000";
 layers = (
 {
 anchors = (
@@ -5764,6 +5779,15 @@ width = 677;
 );
 }
 );
+instances = (
+{
+instanceInterpolations = {
+m01 = 1;
+};
+name = Regular;
+weightClass = 700;
+}
+);
 metrics = (
 {
 type = ascender;
@@ -5781,10 +5805,35 @@ type = baseline;
 type = descender;
 }
 );
+stems = (
+{
+name = "Neuer Stamm";
+},
+{
+horizontal = 1;
+name = "Neuer Stamm";
+},
+{
+name = "Neuer Stamm";
+},
+{
+horizontal = 1;
+name = "Neuer Stamm";
+}
+);
 unitsPerEm = 1000;
 userData = {
 GSDimensionPlugin.Dimensions = {
 m01 = {
+HH = "195";
+HV = "230";
+OH = "225";
+OV = "230";
+nV = "230";
+nd = "66";
+oH = "146";
+oV = "200";
+tH = "177";
 };
 };
 };
