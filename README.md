@@ -16,3 +16,8 @@
 - I can't estimate if the shapes of the Icelandic letters (such as Þ, þ or ð) are recognizable for native speakers/readers since I don't know the language
 - the number glyphs need some rework/finetuning
 - all punctuations need some testing
+
+## Design/Approach
+The font attempts a hybrid between a brutalist aesthetic, at times reminiscent of a Textura, and a design that evokes the aesthetics of 1980s pen-and-paper role-playing games and fantasy novels. As a "creative constraint," the font does not use any Bézier curves. The name "Brokken" is derived from its rock-like appearance (German "Brocken" = chunk, bolder) and the approach that all letters are created by combining chunks.
+
+![Chunk Combination](img/chunks.png)
