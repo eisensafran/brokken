@@ -1,5 +1,5 @@
 # brokken
- Creating a crossover between a broken brutalist and a 'esoteric'/fantasy font. You can find the current state as a usable `OTF`in the `otf`folder. The font is developed in Glyphs 3.
+ Creating a crossover between a broken brutalist and an 'esoteric'/fantasy font. You can find the current state as a usable `OTF`in the `otf`folder. The font is developed in Glyphs 3.
 
  ![Teaser Brokken](img/teaser.png)
 
