@@ -1,4 +1,4 @@
-# brokken
+# BROKKEN
  Creating a crossover between a broken brutalist and an 'esoteric'/fantasy font. You can find the current state as a usable `Brokken-Regular.otf`in the `otf` folder. The font is developed in Glyphs 3 and doesn't use any Bézier curves at all.
 
  ![Teaser Brokken](img/teaser.png)
