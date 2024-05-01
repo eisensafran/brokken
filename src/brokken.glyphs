@@ -2,7 +2,9 @@
 .appVersion = "3259";
 .formatVersion = 3;
 DisplayStrings = (
-Naturkosmetik
+"Þ",
+"ð",
+"þ"
 );
 customParameters = (
 {
@@ -10745,7 +10747,7 @@ unicode = 125;
 },
 {
 glyphname = bracketleft;
-lastChange = "2024-04-30 11:36:22 +0000";
+lastChange = "2024-05-01 13:53:41 +0000";
 layers = (
 {
 layerId = m01;
@@ -10764,14 +10766,14 @@ nodes = (
 );
 }
 );
-width = 600;
+width = 525;
 }
 );
 unicode = 91;
 },
 {
 glyphname = bracketright;
-lastChange = "2024-04-30 11:36:46 +0000";
+lastChange = "2024-05-01 13:53:47 +0000";
 layers = (
 {
 layerId = m01;
@@ -10790,7 +10792,7 @@ nodes = (
 );
 }
 );
-width = 600;
+width = 525;
 }
 );
 unicode = 93;
