@@ -2,11 +2,7 @@
 .appVersion = "3260";
 .formatVersion = 3;
 DisplayStrings = (
-"OYALTA
-AY NY",
-"WÄH",
-"HÄV",
-""
+erguss
 );
 classes = (
 {
@@ -240,7 +236,7 @@ fontMaster = (
 customParameters = (
 {
 name = hheaAscender;
-value = 800;
+value = 900;
 },
 {
 name = hheaDescender;
@@ -248,11 +244,11 @@ value = -150;
 },
 {
 name = hheaLineGap;
-value = 150;
+value = 200;
 },
 {
 name = typoAscender;
-value = 800;
+value = 900;
 },
 {
 name = typoDescender;
@@ -260,11 +256,11 @@ value = -150;
 },
 {
 name = typoLineGap;
-value = 150;
+value = 200;
 },
 {
 name = winAscent;
-value = 800;
+value = 900;
 },
 {
 name = winDescent;
@@ -276,7 +272,7 @@ id = m01;
 metricValues = (
 {
 over = 20;
-pos = 800;
+pos = 900;
 },
 {
 over = 20;
