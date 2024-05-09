@@ -2,9 +2,8 @@
 .appVersion = "3260";
 .formatVersion = 3;
 DisplayStrings = (
-"aija í",
-"ĳ",
-""
+Mafino,
+"Â"
 );
 classes = (
 {
@@ -312,8 +311,22 @@ name = Bold;
 stemValues = (
 168,
 90,
+200,
 146,
-200
+200,
+146,
+200,
+146,
+200,
+146,
+200,
+146,
+200,
+146,
+200,
+146,
+200,
+146
 );
 userData = {
 GSCornerRadius = 15;
@@ -15721,10 +15734,59 @@ horizontal = 1;
 name = "Neuer Stamm";
 },
 {
+name = "Neuer Stamm";
+},
+{
 horizontal = 1;
 name = "Neuer Stamm";
 },
 {
+name = "Neuer Stamm";
+},
+{
+horizontal = 1;
+name = "Neuer Stamm";
+},
+{
+name = "Neuer Stamm";
+},
+{
+horizontal = 1;
+name = "Neuer Stamm";
+},
+{
+name = "Neuer Stamm";
+},
+{
+horizontal = 1;
+name = "Neuer Stamm";
+},
+{
+name = "Neuer Stamm";
+},
+{
+horizontal = 1;
+name = "Neuer Stamm";
+},
+{
+name = "Neuer Stamm";
+},
+{
+horizontal = 1;
+name = "Neuer Stamm";
+},
+{
+name = "Neuer Stamm";
+},
+{
+horizontal = 1;
+name = "Neuer Stamm";
+},
+{
+name = "Neuer Stamm";
+},
+{
+horizontal = 1;
 name = "Neuer Stamm";
 }
 );
