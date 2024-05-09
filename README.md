@@ -5,15 +5,16 @@
  ![Teaser Brokken](img/teaser.png)
 
  ## Status Quo
- The font is in a very early alpha state. Use at your own risk. I aim to support full Western Latin (including all diacritics and umlauts) but at the moment I focus on central Europe's letter bindings. A lot of testing is neccessary. 
+ - The font is in a very early alpha state. Use at your own risk. I aim to support full Western Latin (including all diacritics and umlauts) but at the moment I focus on central Europe's letter bindings. A lot of testing is neccessary. 
+ - The bold version can be considered alpha, an italic version is in development (currently only untested builds can be found in `builds`)
 
 ![Glyph Table](img/palette.png)
 
 ## Known Issues
-- I can't test if the Dutch íj/ÍJ ligature works properly
+- ~~I can't test if the Dutch ij/IJ ligature works properly since I don't know the language.~~ UPDATE: Thanks to Henrike I understood the problem a lot better: The key issue here is that a `íj́` is difficult to input on a standard keyboard, therefore it is neccessary that once a `í` following a `j` is detected the `j` needs to be replaced by `j́`. This is also true for captial letters. ([see here](https://nl.wikipedia.org/wiki/IJ_(digraaf)))
 - Spacing and Kerning is rudimentary at best
 - The font is currently tested on OS X only, therefore I don't know if the automatic hinting works 'good enough' on Windows or Linux
-- ~~Critical: The horizontal scaling of the letters/glyphs needs to be adjusted, the font is too tall at the moment~~ (UPDATE: Did some rescaling, metrics need to be adjusted.)
+- ~~Critical: The horizontal scaling of the letters/glyphs needs to be adjusted, the font is too tall at the moment~~ (UPDATE: Did some rescaling, metrics still need to be adjusted since the descenders are now cut off.)
 - I can't estimate if the shapes of the Icelandic letters (such as Þ, þ or ð) are recognizable for native speakers/readers since I don't know the language
 - the number glyphs need some rework/finetuning
 - all punctuations need some testing
