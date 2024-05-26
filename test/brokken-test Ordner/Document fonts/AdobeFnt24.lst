@@ -1,0 +1,171 @@
+%!Adobe-FontList 1.24
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/andreassiess/Documents/GitHub/brokken/test/brokken-test Ordner/Document fonts/AdobeFnt24.lst
+FileLength:635
+FileModTime:738404860
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Brokken-Bold
+FamilyName:Brokken
+StyleName:Bold
+MenuName:Brokken
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Brokken Bold
+WritingScript:Roman
+OutlineFileName:/Users/andreassiess/Documents/GitHub/brokken/test/brokken-test Ordner/Document fonts/Brokken-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:41872
+FileModTime:738404960
+NameArray:0,Win,1,Brokken
+NameArray:0,Win,16,Brokken
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Brokken-Light
+FamilyName:Brokken
+StyleName:Light
+MenuName:Brokken Light
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Brokken Light
+WritingScript:Roman
+OutlineFileName:/Users/andreassiess/Documents/GitHub/brokken/test/brokken-test Ordner/Document fonts/Brokken-Light.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:44524
+FileModTime:738404961
+NameArray:0,Win,1,Brokken Light
+NameArray:0,Win,16,Brokken
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Brokken-Regular
+FamilyName:Brokken
+StyleName:Regular
+MenuName:Brokken
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Brokken
+WritingScript:Roman
+OutlineFileName:/Users/andreassiess/Documents/GitHub/brokken/test/brokken-test Ordner/Document fonts/Brokken-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:44456
+FileModTime:738404961
+NameArray:0,Win,1,Brokken
+NameArray:0,Win,16,Brokken
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Brokken-Semibold
+FamilyName:Brokken
+StyleName:Semibold
+MenuName:Brokken Semibold
+StyleBits:0
+WeightClass:600
+WidthClass:5
+AngleClass:0
+FullName:Brokken Semibold
+WritingScript:Roman
+OutlineFileName:/Users/andreassiess/Documents/GitHub/brokken/test/brokken-test Ordner/Document fonts/Brokken-Semibold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:43716
+FileModTime:738404961
+NameArray:0,Win,1,Brokken Semibold
+NameArray:0,Win,16,Brokken
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Brokken-Thin
+FamilyName:Brokken
+StyleName:Thin
+MenuName:Brokken Thin
+StyleBits:0
+WeightClass:200
+WidthClass:5
+AngleClass:0
+FullName:Brokken Thin
+WritingScript:Roman
+OutlineFileName:/Users/andreassiess/Documents/GitHub/brokken/test/brokken-test Ordner/Document fonts/Brokken-Thin.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:44460
+FileModTime:738404960
+NameArray:0,Win,1,Brokken Thin
+NameArray:0,Win,16,Brokken
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:iAWriterDuoS-Regular
+FamilyName:iA Writer Duo S
+StyleName:Regular
+MenuName:iA Writer Duo S
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:iA Writer Duo S Regular
+WritingScript:Roman
+OutlineFileName:/Users/andreassiess/Documents/GitHub/brokken/test/brokken-test Ordner/Document fonts/iAWriterDuoS-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:120696
+FileModTime:661036987
+NameArray:0,Mac,4,iA Writer Duo S Regular
+NameArray:0,Win,1,iA Writer Duo S
+%EndFont
+
