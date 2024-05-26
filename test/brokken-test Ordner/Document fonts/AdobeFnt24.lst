@@ -4,6 +4,14 @@
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
+OutlineFileName:/Users/andreassiess/Documents/GitHub/brokken/test/brokken-test Ordner/Document fonts/.DS_Store
+FileLength:6148
+FileModTime:738413197
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
 OutlineFileName:/Users/andreassiess/Documents/GitHub/brokken/test/brokken-test Ordner/Document fonts/AdobeFnt24.lst
 FileLength:635
 FileModTime:738404860
@@ -142,6 +150,14 @@ FileLength:44460
 FileModTime:738404960
 NameArray:0,Win,1,Brokken Thin
 NameArray:0,Win,16,Brokken
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/andreassiess/Documents/GitHub/brokken/test/brokken-test Ordner/Document fonts/brokken fonttest.html
+FileLength:17250
+FileModTime:738413127
 %EndFont
 
 %BeginFont

@@ -1,12 +1,13 @@
 # BROKKEN
- Creating a crossover between a broken brutalist and an 'esoteric'/fantasy font. You can find the current state (untested) as a usable `Brokken-Bold.otf` (OS X) and `Brokken-Bold.ttf` (WIN) in the `builds` folder. If you want to use the font in a semi-tested version please use one of the [stable releases](https://github.com/eisensafran/brokken/releases).
+ Creating a crossover between a broken brutalist and an ‘esoteric’/fantasy font. You can find the current state (untested) as a usable `Brokken.otf` (OS X) and `Brokken.ttf` (WIN) in the `builds` folder. If you want to use the font in a semi-tested version please use one of the [stable releases](https://github.com/eisensafran/brokken/releases).
  _Brokken_ is developed in Glyphs 3 and doesn't use any Bézier curves at all. More info about design and features can be found [here](https://andi-siess.de/brokken/).
 
- ![Teaser Brokken](img/teaser.png)
+ ![Teaser Brokken](img/brokken-teaser-2.jpg)
 
  ## Status Quo
- - The font is in a very early alpha state. Use at your own risk. I aim to support full Western Latin (including all diacritics and umlauts) but at the moment I focus on central Europe's letter bindings. A lot of testing is neccessary. 
- - The bold version can be considered alpha, an italic version is in development (currently only untested builds can be found in `builds`)
+ - The font is in an early beta state. **Use at your own risk.** All central European letters (including all diacritics) are supported. A lot of testing is neccessary. 
+ - The *bold*, *semibold*, *regular*, *light*, and *thin* versions can be considered usable, an italic version is in development (currently only untested builds can be found in `builds`)
+- The font features two masters (*Brokken bold* and *Brokken thin*) where the other versions (*Brokken light*, *Brokken regular* and *Brokken semibold*) are interpolated from.
 
 ![Glyph Table](img/palette.png)
 
@@ -20,6 +21,6 @@
 - all punctuations need some testing
 
 ## Design/Approach
-The font attempts a hybrid between a brutalist aesthetic, at times reminiscent of a Textura, and a design that evokes the aesthetics of 1980s pen-and-paper role-playing games and fantasy novels. As a "creative constraint," the font does not use any Bézier curves. The name "Brokken" is derived from its rock-like appearance (German "Brocken" = chunk, bolder) and the approach that all letters are created by combining chunks.
+The font attempts a hybrid between a brutalist aesthetic, at times reminiscent of a *Textura*, and a design that evokes the aesthetics of 1980s pen-and-paper role-playing games and fantasy novels. As a ‘creative constraint’, the font does not use any Bézier curves. The name ‘Brokken’ is derived from its rock-like appearance (German ‘Brocken’ = chunk, bolder) and the approach that all letters are created by combining chunks.
 
 ![Chunk Combination](img/chunks.png)
