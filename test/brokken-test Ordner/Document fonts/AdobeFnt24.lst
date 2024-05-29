@@ -6,15 +6,15 @@ Handler:DirectoryHandler
 FontType:Invalid
 OutlineFileName:/Users/andreassiess/Documents/GitHub/brokken/test/brokken-test Ordner/Document fonts/.DS_Store
 FileLength:6148
-FileModTime:738413197
+FileModTime:738413202
 %EndFont
 
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
 OutlineFileName:/Users/andreassiess/Documents/GitHub/brokken/test/brokken-test Ordner/Document fonts/AdobeFnt24.lst
-FileLength:635
-FileModTime:738404860
+FileLength:4152
+FileModTime:738441525
 %EndFont
 
 %BeginFont
@@ -38,8 +38,8 @@ hasSVG:no
 hasSBIX:no
 hasCOLR:no
 VariableFontType:NonVariableFont
-FileLength:41872
-FileModTime:738404960
+FileLength:42864
+FileModTime:738441521
 NameArray:0,Win,1,Brokken
 NameArray:0,Win,16,Brokken
 %EndFont
@@ -65,8 +65,8 @@ hasSVG:no
 hasSBIX:no
 hasCOLR:no
 VariableFontType:NonVariableFont
-FileLength:44524
-FileModTime:738404961
+FileLength:45036
+FileModTime:738441521
 NameArray:0,Win,1,Brokken Light
 NameArray:0,Win,16,Brokken
 %EndFont
@@ -92,8 +92,8 @@ hasSVG:no
 hasSBIX:no
 hasCOLR:no
 VariableFontType:NonVariableFont
-FileLength:44456
-FileModTime:738404961
+FileLength:44576
+FileModTime:738441521
 NameArray:0,Win,1,Brokken
 NameArray:0,Win,16,Brokken
 %EndFont
@@ -119,8 +119,8 @@ hasSVG:no
 hasSBIX:no
 hasCOLR:no
 VariableFontType:NonVariableFont
-FileLength:43716
-FileModTime:738404961
+FileLength:44412
+FileModTime:738441521
 NameArray:0,Win,1,Brokken Semibold
 NameArray:0,Win,16,Brokken
 %EndFont
@@ -146,42 +146,9 @@ hasSVG:no
 hasSBIX:no
 hasCOLR:no
 VariableFontType:NonVariableFont
-FileLength:44460
-FileModTime:738404960
+FileLength:45008
+FileModTime:738441521
 NameArray:0,Win,1,Brokken Thin
 NameArray:0,Win,16,Brokken
-%EndFont
-
-%BeginFont
-Handler:DirectoryHandler
-FontType:Invalid
-OutlineFileName:/Users/andreassiess/Documents/GitHub/brokken/test/brokken-test Ordner/Document fonts/brokken fonttest.html
-FileLength:17250
-FileModTime:738413127
-%EndFont
-
-%BeginFont
-Handler:DirectoryHandler
-FontType:TrueType
-FontName:iAWriterDuoS-Regular
-FamilyName:iA Writer Duo S
-StyleName:Regular
-MenuName:iA Writer Duo S
-StyleBits:0
-WeightClass:400
-WidthClass:5
-AngleClass:0
-FullName:iA Writer Duo S Regular
-WritingScript:Roman
-OutlineFileName:/Users/andreassiess/Documents/GitHub/brokken/test/brokken-test Ordner/Document fonts/iAWriterDuoS-Regular.ttf
-DataFormat:sfntData
-hasSVG:no
-hasSBIX:no
-hasCOLR:no
-VariableFontType:NonVariableFont
-FileLength:120696
-FileModTime:661036987
-NameArray:0,Mac,4,iA Writer Duo S Regular
-NameArray:0,Win,1,iA Writer Duo S
 %EndFont
 
