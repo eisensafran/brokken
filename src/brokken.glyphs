@@ -1,9 +1,6 @@
 {
 .appVersion = "3260";
 .formatVersion = 3;
-DisplayStrings = (
-"»T«"
-);
 axes = (
 {
 name = Weight;
@@ -23741,6 +23738,20 @@ width = 634;
 }
 );
 unicode = 167;
+},
+{
+glyphname = degree;
+layers = (
+{
+layerId = m01;
+width = 600;
+},
+{
+layerId = m002;
+width = 600;
+}
+);
+unicode = 176;
 },
 {
 glyphname = bar;
