@@ -13,8 +13,8 @@ FileModTime:738413202
 Handler:DirectoryHandler
 FontType:Invalid
 OutlineFileName:/Users/andreassiess/Documents/GitHub/brokken/test/brokken-test Ordner/Document fonts/AdobeFnt24.lst
-FileLength:4152
-FileModTime:738441525
+FileLength:3330
+FileModTime:738868112
 %EndFont
 
 %BeginFont
@@ -38,8 +38,8 @@ hasSVG:no
 hasSBIX:no
 hasCOLR:no
 VariableFontType:NonVariableFont
-FileLength:42864
-FileModTime:738441521
+FileLength:43780
+FileModTime:738868110
 NameArray:0,Win,1,Brokken
 NameArray:0,Win,16,Brokken
 %EndFont
@@ -65,8 +65,8 @@ hasSVG:no
 hasSBIX:no
 hasCOLR:no
 VariableFontType:NonVariableFont
-FileLength:45036
-FileModTime:738441521
+FileLength:47616
+FileModTime:738868110
 NameArray:0,Win,1,Brokken Light
 NameArray:0,Win,16,Brokken
 %EndFont
@@ -92,8 +92,8 @@ hasSVG:no
 hasSBIX:no
 hasCOLR:no
 VariableFontType:NonVariableFont
-FileLength:44576
-FileModTime:738441521
+FileLength:46532
+FileModTime:738868110
 NameArray:0,Win,1,Brokken
 NameArray:0,Win,16,Brokken
 %EndFont
@@ -119,8 +119,8 @@ hasSVG:no
 hasSBIX:no
 hasCOLR:no
 VariableFontType:NonVariableFont
-FileLength:44412
-FileModTime:738441521
+FileLength:46668
+FileModTime:738868110
 NameArray:0,Win,1,Brokken Semibold
 NameArray:0,Win,16,Brokken
 %EndFont
@@ -128,27 +128,17 @@ NameArray:0,Win,16,Brokken
 %BeginFont
 Handler:DirectoryHandler
 FontType:Type1
-FontName:Brokken-Thin
-FamilyName:Brokken
-StyleName:Thin
-MenuName:Brokken Thin
 StyleBits:0
-WeightClass:200
-WidthClass:5
-AngleClass:0
-FullName:Brokken Thin
 WritingScript:Roman
 OutlineFileName:/Users/andreassiess/Documents/GitHub/brokken/test/brokken-test Ordner/Document fonts/Brokken-Thin.otf
 DataFormat:sfntData
-UsesStandardEncoding:yes
+UsesStandardEncoding:no
 isCFF:yes
 hasSVG:no
 hasSBIX:no
 hasCOLR:no
 VariableFontType:NonVariableFont
-FileLength:45008
-FileModTime:738441521
-NameArray:0,Win,1,Brokken Thin
-NameArray:0,Win,16,Brokken
+FileLength:46904
+FileModTime:738868110
 %EndFont
 
