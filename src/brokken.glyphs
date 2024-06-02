@@ -1,6 +1,9 @@
 {
 .appVersion = "3260";
 .formatVersion = 3;
+DisplayStrings = (
+"tehdyissä"
+);
 axes = (
 {
 name = Weight;
@@ -17125,7 +17128,7 @@ unicode = 343;
 glyphname = s;
 kernLeft = s;
 kernRight = s;
-lastChange = "2024-06-01 15:33:42 +0000";
+lastChange = "2024-06-01 16:08:46 +0000";
 layers = (
 {
 anchors = (
@@ -17635,7 +17638,7 @@ unicode = 223;
 },
 {
 glyphname = t;
-lastChange = "2024-06-01 11:42:14 +0000";
+lastChange = "2024-06-01 16:07:07 +0000";
 layers = (
 {
 anchors = (
@@ -18881,7 +18884,7 @@ unicode = 120;
 glyphname = y;
 kernLeft = v;
 kernRight = v;
-lastChange = "2024-06-01 11:23:54 +0000";
+lastChange = "2024-06-01 16:08:28 +0000";
 layers = (
 {
 anchors = (
@@ -27433,7 +27436,7 @@ underscore = -110;
 "@MMK_R_c" = -25;
 "@MMK_R_h" = -20;
 "@MMK_R_j" = -40;
-"@MMK_R_s" = 10;
+"@MMK_R_s" = -5;
 "@MMK_R_v" = -70;
 T = -20;
 at = -50;
@@ -27472,7 +27475,7 @@ space = 0;
 "@MMK_R_c" = -20;
 "@MMK_R_j" = -20;
 "@MMK_R_s" = -10;
-"@MMK_R_v" = -21;
+"@MMK_R_v" = -55;
 at = -40;
 };
 "@MMK_L_e" = {
@@ -27535,6 +27538,7 @@ y = -10;
 "@MMK_L_s" = {
 "@MMK_R_a" = 10;
 "@MMK_R_j" = -10;
+"@MMK_R_s" = 0;
 "@MMK_R_v" = -10;
 at = -30;
 colon = 0;
@@ -28140,7 +28144,7 @@ plus = -20;
 question = -40;
 quotedbl = -60;
 semicolon = -30;
-t = -50;
+t = -20;
 underscore = -60;
 };
 "@MMK_L_r" = {
