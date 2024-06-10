@@ -1,5 +1,3 @@
-# Fontbakery report on Brokken bold
-
  >> com.google.fonts/check/alt_caron
     Check accent of Lcaron, dcaron, lcaron, tcaron
     with Brokken-Bold.ttf
@@ -19,28 +17,6 @@
     WARN tcaron is decomposed and therefore could not be checked. Please check manually. [code: decomposed-outline]                                                    
 
     Result: WARN
-
- >> com.google.fonts/check/case_mapping
-    Ensure the font supports case swapping for all its glyphs.
-    with Brokken-Bold.ttf
-
-    Rationale:                                                                
-                                                                                                                                                                       
-    Ensure that no glyph lacks its corresponding upper or lower counterpart (but only when unicode supports case-mapping).                                             
-                                                                                                                                                                       
-    More info: https://github.com/googlefonts/fontbakery/issues/3230
-
-    FAIL The following glyphs lack their case-swapping counterparts:                                                                                                   
-                                                                                                                                                                       
-                                                                                                                                                                       
-           Glyph present in the font                 Missing case-swapping counterpart                                                                                 
-          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━                                                                        
-           U+01F5: LATIN SMALL LETTER G WITH ACUTE   U+01F4: LATIN CAPITAL LETTER G WITH ACUTE                                                                         
-                                                                                                                                                                       
-                                                                                                                                                                       
-         [code: missing-case-counterparts]                                                                                                                             
-
-# Result: FAIL
 
  >> com.google.fonts/check/contour_count
     Check if each glyph has the recommended amount of contours.
@@ -71,50 +47,6 @@
 
     Result: WARN
 
- >> com.google.fonts/check/family/win_ascent_and_descent
-    Checking OS/2 usWinAscent & usWinDescent.
-    with Brokken-Bold.ttf
-
-    Rationale:                                                                
-                                                                                                                                                                       
-    A font's winAscent and winDescent values should be greater than or equal to the head table's yMax, abs(yMin) values. If they are less than these values, clipping  
-    can occur on Windows platforms (https://github.com/RedHatBrand/Overpass/issues/33).                                                                                
-                                                                                                                                                                       
-    If the font includes tall/deep writing systems such as Arabic or Devanagari, the winAscent and winDescent can be greater than the yMax and absolute yMin values    
-    to accommodate vowel marks.                                                                                                                                        
-                                                                                                                                                                       
-    When the 'win' Metrics are significantly greater than the UPM, the linespacing can appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7       
-    (Use_Typo_Metrics), will force Windows to use the OS/2 'typo' values instead. This means the font developer can control the linespacing with the 'typo' values,    
-    whilst avoiding clipping by setting the 'win' values to values greater than the yMax and absolute yMin.                                                            
-                                                                                                                                                                       
-    FAIL OS/2.usWinAscent value should be equal or greater than 991, but got 990 instead [code: ascent]                                                                
-
-# Result: FAIL
-
- >> com.google.fonts/check/linegaps
-    Checking Vertical Metric Linegaps.
-    with Brokken-Bold.ttf
-
-    Rationale:                                                                
-                                                                                                                                                                       
-    The LineGap value is a space added to the line height created by the union of the (typo/hhea)Ascender and (typo/hhea)Descender. It is handled differently          
-    according to the environment.                                                                                                                                      
-                                                                                                                                                                       
-    This leading value will be added above the text line in most desktop apps. It will be shared above and under in web browsers, and ignored in Windows if            
-    Use_Typo_Metrics is disabled.                                                                                                                                      
-                                                                                                                                                                       
-    For better linespacing consistency across platforms, (typo/hhea)LineGap values must be 0.                                                                          
-                                                                                                                                                                       
-    More info: https://github.com/fonttools/fontbakery/issues/4133
-               https://googlefonts.github.io/gf-guide/metrics.html
-
-    FAIL hhea lineGap is not equal to 0.                                                                                                                               
-                                                                                                                                                                       
-         Overridden: This check was originally a WARN but was overridden by the ufo profile: For Google Fonts, all messages from this check are considered FAILs.      
-         [code: hhea]                                                                                                                                                  
-
-# Result: FAIL
-
  >> com.google.fonts/check/math_signs_width
     Check math signs have the same width.
     with Brokken-Bold.ttf
@@ -137,23 +69,6 @@
 
     Result: WARN
 
- >> com.google.fonts/check/whitespace_glyphs
-    Font contains glyphs for whitespace characters?
-    with Brokken-Bold.ttf
-
-    Rationale:                                                                
-                                                                                                                                                                       
-    The OpenType specification recommends that fonts should contain glyphs for the following whitespace characters:                                                    
-                                                                                                                                                                       
-    - U+0020 SPACE - U+00A0 NO-BREAK SPACE                                                                                                                             
-                                                                                                                                                                       
-    The space character is required for text processing, and the no-break space is useful to prevent line breaks at its position. It is also recommended to have a     
-    glyph for the tab character (U+0009) and the soft hyphen (U+00AD), but these are not mandatory.                                                                    
-                                                                                                                                                                       
-    FAIL Whitespace glyph missing for codepoint 0x00A0. [code: missing-whitespace-glyph-0x00A0]                                                                        
-
-# Result: FAIL
-
  >> com.google.fonts/check/outline_jaggy_segments
     Do outlines contain any jaggy segments?
     with Brokken-Bold.ttf
@@ -168,19 +83,7 @@
     WARN The following glyphs have jaggy segments:                                                                                                                     
                                                                                                                                                                        
                                                                                                                                                                        
-          * P (U+0050): L<<175.0,534.0>--<174.0,534.0>>/L<<174.0,534.0>--<255.0,520.0>> = 9.80609275989708                                                             
-                                                                                                                                                                       
-          * T_T: L<<370.0,1.0>--<252.0,0.0>>/L<<252.0,0.0>--<252.0,0.0>> = 0.48554583000816465                                                                         
-                                                                                                                                                                       
-          * Z (U+005A): L<<392.0,571.0>--<393.0,571.0>>/L<<393.0,571.0>--<232.0,598.0>> = 9.520021865774119                                                            
-                                                                                                                                                                       
-          * Zacute (U+0179): L<<392.0,571.0>--<393.0,571.0>>/L<<393.0,571.0>--<232.0,598.0>> = 9.520021865774119                                                       
-                                                                                                                                                                       
-          * Zcaron (U+017D): L<<392.0,571.0>--<393.0,571.0>>/L<<393.0,571.0>--<232.0,598.0>> = 9.520021865774119                                                       
-                                                                                                                                                                       
-          * Zdotaccent (U+017B): L<<392.0,571.0>--<393.0,571.0>>/L<<393.0,571.0>--<232.0,598.0>> = 9.520021865774119                                                   
-                                                                                                                                                                       
-          * section (U+00A7): L<<94.0,225.0>--<98.0,226.0>>/L<<98.0,226.0>--<94.0,226.0>> = 14.036243467926484 [code: found-jaggy-segments]                            
+          * T_T: L<<370.0,1.0>--<252.0,0.0>>/L<<252.0,0.0>--<252.0,0.0>> = 0.48554583000816465 [code: found-jaggy-segments]                                            
                                                                                                                                                                        
 
     Result: WARN
@@ -221,10 +124,528 @@
                                                                                                                                                                        
           * Adieresis.ss02: L<<662.0,261.0>--<661.0,127.0>>                                                                                                            
                                                                                                                                                                        
-          * 260 more.                                                                                                                                                  
+          * Agrave (U+00C0): L<<386.0,217.0>--<232.0,218.0>>                                                                                                           
                                                                                                                                                                        
+          * Agrave.ss02: L<<662.0,261.0>--<661.0,127.0>>                                                                                                               
                                                                                                                                                                        
-         Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]                                                                       
+          * Amacron (U+0100): L<<386.0,217.0>--<232.0,218.0>>                                                                                                          
+                                                                                                                                                                       
+          * Amacron.ss02: L<<662.0,261.0>--<661.0,127.0>>                                                                                                              
+                                                                                                                                                                       
+          * Aogonek (U+0104): L<<386.0,217.0>--<232.0,218.0>>                                                                                                          
+                                                                                                                                                                       
+          * Aogonek.ss02: L<<662.0,261.0>--<661.0,127.0>>                                                                                                              
+                                                                                                                                                                       
+          * Aring (U+00C5): L<<386.0,217.0>--<232.0,218.0>>                                                                                                            
+                                                                                                                                                                       
+          * Aring.ss02: L<<662.0,261.0>--<661.0,127.0>>                                                                                                                
+                                                                                                                                                                       
+          * Atilde (U+00C3): L<<386.0,217.0>--<232.0,218.0>>                                                                                                           
+                                                                                                                                                                       
+          * Atilde.ss02: L<<662.0,261.0>--<661.0,127.0>>                                                                                                               
+                                                                                                                                                                       
+          * B (U+0042): L<<485.0,-1.0>--<144.0,0.0>>                                                                                                                   
+                                                                                                                                                                       
+          * C (U+0043): L<<20.0,209.0>--<22.0,499.0>>                                                                                                                  
+                                                                                                                                                                       
+          * C (U+0043): L<<531.0,1.0>--<352.0,0.0>>                                                                                                                    
+                                                                                                                                                                       
+          * Cacute (U+0106): L<<20.0,209.0>--<22.0,499.0>>                                                                                                             
+                                                                                                                                                                       
+          * Cacute (U+0106): L<<531.0,1.0>--<352.0,0.0>>                                                                                                               
+                                                                                                                                                                       
+          * Ccaron (U+010C): L<<20.0,209.0>--<22.0,499.0>>                                                                                                             
+                                                                                                                                                                       
+          * Ccaron (U+010C): L<<531.0,1.0>--<352.0,0.0>>                                                                                                               
+                                                                                                                                                                       
+          * Ccedilla (U+00C7): L<<20.0,209.0>--<22.0,499.0>>                                                                                                           
+                                                                                                                                                                       
+          * Ccedilla (U+00C7): L<<531.0,1.0>--<359.0,0.0>>                                                                                                             
+                                                                                                                                                                       
+          * Ccircumflex (U+0108): L<<20.0,209.0>--<22.0,499.0>>                                                                                                        
+                                                                                                                                                                       
+          * Ccircumflex (U+0108): L<<531.0,1.0>--<352.0,0.0>>                                                                                                          
+                                                                                                                                                                       
+          * Cdotaccent (U+010A): L<<20.0,209.0>--<22.0,499.0>>                                                                                                         
+                                                                                                                                                                       
+          * Cdotaccent (U+010A): L<<531.0,1.0>--<352.0,0.0>>                                                                                                           
+                                                                                                                                                                       
+          * G (U+0047): L<<20.0,209.0>--<22.0,499.0>>                                                                                                                  
+                                                                                                                                                                       
+          * G.ss01: L<<20.0,84.0>--<23.0,622.0>>                                                                                                                       
+                                                                                                                                                                       
+          * Gbreve (U+011E): L<<20.0,209.0>--<22.0,499.0>>                                                                                                             
+                                                                                                                                                                       
+          * Gcircumflex (U+011C): L<<20.0,209.0>--<22.0,499.0>>                                                                                                        
+                                                                                                                                                                       
+          * Gdotaccent (U+0120): L<<20.0,209.0>--<22.0,499.0>>                                                                                                         
+                                                                                                                                                                       
+          * H (U+0048): L<<605.0,1.0>--<468.0,0.0>>                                                                                                                    
+                                                                                                                                                                       
+          * Hcircumflex (U+0124): L<<605.0,1.0>--<468.0,0.0>>                                                                                                          
+                                                                                                                                                                       
+          * I (U+0049): L<<250.0,488.0>--<249.0,127.0>>                                                                                                                
+                                                                                                                                                                       
+          * I (U+0049): L<<91.0,164.0>--<92.0,565.0>>                                                                                                                  
+                                                                                                                                                                       
+          * IJ (U+0132): L<<250.0,488.0>--<249.0,127.0>>                                                                                                               
+                                                                                                                                                                       
+          * IJ (U+0132): L<<91.0,164.0>--<92.0,565.0>>                                                                                                                 
+                                                                                                                                                                       
+          * Iacute (U+00CD): L<<250.0,488.0>--<249.0,127.0>>                                                                                                           
+                                                                                                                                                                       
+          * Iacute (U+00CD): L<<91.0,164.0>--<92.0,565.0>>                                                                                                             
+                                                                                                                                                                       
+          * Icircumflex (U+00CE): L<<250.0,488.0>--<249.0,127.0>>                                                                                                      
+                                                                                                                                                                       
+          * Icircumflex (U+00CE): L<<91.0,164.0>--<92.0,565.0>>                                                                                                        
+                                                                                                                                                                       
+          * Idieresis (U+00CF): L<<250.0,488.0>--<249.0,127.0>>                                                                                                        
+                                                                                                                                                                       
+          * Idieresis (U+00CF): L<<91.0,164.0>--<92.0,565.0>>                                                                                                          
+                                                                                                                                                                       
+          * Idotaccent (U+0130): L<<250.0,488.0>--<249.0,127.0>>                                                                                                       
+                                                                                                                                                                       
+          * Idotaccent (U+0130): L<<91.0,164.0>--<92.0,565.0>>                                                                                                         
+                                                                                                                                                                       
+          * Igrave (U+00CC): L<<250.0,488.0>--<249.0,127.0>>                                                                                                           
+                                                                                                                                                                       
+          * Igrave (U+00CC): L<<91.0,164.0>--<92.0,565.0>>                                                                                                             
+                                                                                                                                                                       
+          * Imacron (U+012A): L<<250.0,488.0>--<249.0,127.0>>                                                                                                          
+                                                                                                                                                                       
+          * Imacron (U+012A): L<<91.0,164.0>--<92.0,565.0>>                                                                                                            
+                                                                                                                                                                       
+          * Iogonek (U+012E): L<<250.0,488.0>--<249.0,127.0>>                                                                                                          
+                                                                                                                                                                       
+          * Iogonek (U+012E): L<<91.0,164.0>--<92.0,565.0>>                                                                                                            
+                                                                                                                                                                       
+          * Itilde (U+0129): L<<250.0,488.0>--<249.0,127.0>>                                                                                                           
+                                                                                                                                                                       
+          * Itilde (U+0129): L<<91.0,164.0>--<92.0,565.0>>                                                                                                             
+                                                                                                                                                                       
+          * L (U+004C): L<<238.0,518.0>--<237.0,168.0>>                                                                                                                
+                                                                                                                                                                       
+          * Lacute (U+0139): L<<238.0,518.0>--<237.0,168.0>>                                                                                                           
+                                                                                                                                                                       
+          * Lcaron (U+013D): L<<238.0,518.0>--<237.0,168.0>>                                                                                                           
+                                                                                                                                                                       
+          * N (U+004E): L<<662.0,501.0>--<664.0,0.0>>                                                                                                                  
+                                                                                                                                                                       
+          * Nacute (U+0143): L<<662.0,501.0>--<664.0,0.0>>                                                                                                             
+                                                                                                                                                                       
+          * Ncaron (U+0147): L<<662.0,501.0>--<664.0,0.0>>                                                                                                             
+                                                                                                                                                                       
+          * Ntilde (U+00D1): L<<662.0,501.0>--<664.0,0.0>>                                                                                                             
+                                                                                                                                                                       
+          * O (U+004F): L<<157.0,133.0>--<372.0,132.0>>                                                                                                                
+                                                                                                                                                                       
+          * O (U+004F): L<<419.0,0.0>--<129.0,-1.0>>                                                                                                                   
+                                                                                                                                                                       
+          * OE (U+0152): L<<157.0,133.0>--<372.0,132.0>>                                                                                                               
+                                                                                                                                                                       
+          * OE (U+0152): L<<419.0,0.0>--<129.0,-1.0>>                                                                                                                  
+                                                                                                                                                                       
+          * OE (U+0152): L<<619.0,700.0>--<885.0,702.0>>                                                                                                               
+                                                                                                                                                                       
+          * Oacute (U+00D3): L<<157.0,133.0>--<372.0,132.0>>                                                                                                           
+                                                                                                                                                                       
+          * Oacute (U+00D3): L<<419.0,0.0>--<129.0,-1.0>>                                                                                                              
+                                                                                                                                                                       
+          * Ocircumflex (U+00D4): L<<157.0,133.0>--<372.0,132.0>>                                                                                                      
+                                                                                                                                                                       
+          * Ocircumflex (U+00D4): L<<419.0,0.0>--<129.0,-1.0>>                                                                                                         
+                                                                                                                                                                       
+          * Odieresis (U+00D6): L<<157.0,133.0>--<372.0,132.0>>                                                                                                        
+                                                                                                                                                                       
+          * Odieresis (U+00D6): L<<419.0,0.0>--<129.0,-1.0>>                                                                                                           
+                                                                                                                                                                       
+          * Ograve (U+00D2): L<<157.0,133.0>--<372.0,132.0>>                                                                                                           
+                                                                                                                                                                       
+          * Ograve (U+00D2): L<<419.0,0.0>--<129.0,-1.0>>                                                                                                              
+                                                                                                                                                                       
+          * Ohungarumlaut (U+0150): L<<157.0,133.0>--<372.0,132.0>>                                                                                                    
+                                                                                                                                                                       
+          * Ohungarumlaut (U+0150): L<<419.0,0.0>--<129.0,-1.0>>                                                                                                       
+                                                                                                                                                                       
+          * Omacron (U+014C): L<<157.0,133.0>--<372.0,132.0>>                                                                                                          
+                                                                                                                                                                       
+          * Omacron (U+014C): L<<419.0,0.0>--<129.0,-1.0>>                                                                                                             
+                                                                                                                                                                       
+          * Oslash (U+00D8): L<<419.0,0.0>--<214.0,-1.0>>                                                                                                              
+                                                                                                                                                                       
+          * Otilde (U+00D5): L<<157.0,133.0>--<372.0,132.0>>                                                                                                           
+                                                                                                                                                                       
+          * Otilde (U+00D5): L<<419.0,0.0>--<129.0,-1.0>>                                                                                                              
+                                                                                                                                                                       
+          * P (U+0050): L<<103.0,198.0>--<102.0,546.0>>                                                                                                                
+                                                                                                                                                                       
+          * Q (U+0051): L<<307.0,700.0>--<518.0,699.0>>                                                                                                                
+                                                                                                                                                                       
+          * R (U+0052): L<<326.0,698.0>--<563.0,700.0>>                                                                                                                
+                                                                                                                                                                       
+          * Racute (U+0154): L<<326.0,698.0>--<563.0,700.0>>                                                                                                           
+                                                                                                                                                                       
+          * Rcaron (U+0158): L<<326.0,698.0>--<563.0,700.0>>                                                                                                           
+                                                                                                                                                                       
+          * S (U+0053): L<<193.0,698.0>--<454.0,700.0>>                                                                                                                
+                                                                                                                                                                       
+          * S (U+0053): L<<446.0,0.0>--<55.0,1.0>>                                                                                                                     
+                                                                                                                                                                       
+          * S (U+0053): L<<55.0,1.0>--<56.0,129.0>>                                                                                                                    
+                                                                                                                                                                       
+          * Sacute (U+015A): L<<193.0,698.0>--<454.0,700.0>>                                                                                                           
+                                                                                                                                                                       
+          * Sacute (U+015A): L<<446.0,0.0>--<55.0,1.0>>                                                                                                                
+                                                                                                                                                                       
+          * Sacute (U+015A): L<<55.0,1.0>--<56.0,129.0>>                                                                                                               
+                                                                                                                                                                       
+          * Scaron (U+0160): L<<193.0,698.0>--<454.0,700.0>>                                                                                                           
+                                                                                                                                                                       
+          * Scaron (U+0160): L<<446.0,0.0>--<55.0,1.0>>                                                                                                                
+                                                                                                                                                                       
+          * Scaron (U+0160): L<<55.0,1.0>--<56.0,129.0>>                                                                                                               
+                                                                                                                                                                       
+          * Scedilla (U+015E): L<<193.0,698.0>--<454.0,700.0>>                                                                                                         
+                                                                                                                                                                       
+          * Scedilla (U+015E): L<<55.0,1.0>--<56.0,129.0>>                                                                                                             
+                                                                                                                                                                       
+          * Scircumflex (U+015C): L<<193.0,698.0>--<454.0,700.0>>                                                                                                      
+                                                                                                                                                                       
+          * Scircumflex (U+015C): L<<446.0,0.0>--<55.0,1.0>>                                                                                                           
+                                                                                                                                                                       
+          * Scircumflex (U+015C): L<<55.0,1.0>--<56.0,129.0>>                                                                                                          
+                                                                                                                                                                       
+          * T_T: L<<370.0,1.0>--<252.0,0.0>>                                                                                                                           
+                                                                                                                                                                       
+          * T_T: L<<842.0,-1.0>--<688.0,0.0>>                                                                                                                          
+                                                                                                                                                                       
+          * Thorn (U+00DE): L<<108.0,704.0>--<296.0,703.0>>                                                                                                            
+                                                                                                                                                                       
+          * Thorn (U+00DE): L<<256.0,425.0>--<257.0,262.0>>                                                                                                            
+                                                                                                                                                                       
+          * Thorn (U+00DE): L<<91.0,164.0>--<92.0,565.0>>                                                                                                              
+                                                                                                                                                                       
+          * ae (U+00E6): L<<775.0,1.0>--<549.0,0.0>>                                                                                                                   
+                                                                                                                                                                       
+          * aeacute (U+01FD): L<<775.0,1.0>--<549.0,0.0>>                                                                                                              
+                                                                                                                                                                       
+          * ampersand (U+0026): L<<168.0,702.0>--<417.0,700.0>>                                                                                                        
+                                                                                                                                                                       
+          * bar (U+007C): L<<222.0,660.0>--<218.0,-175.0>>                                                                                                             
+                                                                                                                                                                       
+          * bar (U+007C): L<<80.0,-108.0>--<86.0,654.0>>                                                                                                               
+                                                                                                                                                                       
+          * bracketleft (U+005B): L<<319.0,-129.0>--<82.0,-130.0>>                                                                                                     
+                                                                                                                                                                       
+          * bracketleft (U+005B): L<<82.0,-130.0>--<81.0,866.0>>                                                                                                       
+                                                                                                                                                                       
+          * bracketright (U+005D): L<<268.0,-130.0>--<31.0,-129.0>>                                                                                                    
+                                                                                                                                                                       
+          * bracketright (U+005D): L<<269.0,866.0>--<268.0,-130.0>>                                                                                                    
+                                                                                                                                                                       
+          * c (U+0063): L<<457.0,1.0>--<278.0,0.0>>                                                                                                                    
+                                                                                                                                                                       
+          * c (U+0063): L<<481.0,493.0>--<482.0,330.0>>                                                                                                                
+                                                                                                                                                                       
+          * cacute (U+0107): L<<457.0,1.0>--<278.0,0.0>>                                                                                                               
+                                                                                                                                                                       
+          * cacute (U+0107): L<<481.0,493.0>--<482.0,330.0>>                                                                                                           
+                                                                                                                                                                       
+          * ccaron (U+010D): L<<457.0,1.0>--<278.0,0.0>>                                                                                                               
+                                                                                                                                                                       
+          * ccaron (U+010D): L<<481.0,493.0>--<482.0,330.0>>                                                                                                           
+                                                                                                                                                                       
+          * ccedilla (U+00E7): L<<481.0,493.0>--<482.0,330.0>>                                                                                                         
+                                                                                                                                                                       
+          * ccircumflex (U+0109): L<<457.0,1.0>--<278.0,0.0>>                                                                                                          
+                                                                                                                                                                       
+          * ccircumflex (U+0109): L<<481.0,493.0>--<482.0,330.0>>                                                                                                      
+                                                                                                                                                                       
+          * cdotaccent (U+010B): L<<457.0,1.0>--<278.0,0.0>>                                                                                                           
+                                                                                                                                                                       
+          * cdotaccent (U+010B): L<<481.0,493.0>--<482.0,330.0>>                                                                                                       
+                                                                                                                                                                       
+          * d (U+0064): L<<320.0,196.0>--<319.0,399.0>>                                                                                                                
+                                                                                                                                                                       
+          * dcaron (U+010F): L<<320.0,196.0>--<319.0,399.0>>                                                                                                           
+                                                                                                                                                                       
+          * dcroat (U+0111): L<<320.0,196.0>--<319.0,399.0>>                                                                                                           
+                                                                                                                                                                       
+          * dollar (U+0024): L<<341.0,590.0>--<211.0,589.0>>                                                                                                           
+                                                                                                                                                                       
+          * dotlessi (U+0131): L<<228.0,326.0>--<229.0,154.0>>                                                                                                         
+                                                                                                                                                                       
+          * e (U+0065): L<<487.0,1.0>--<261.0,0.0>>                                                                                                                    
+                                                                                                                                                                       
+          * eacute (U+00E9): L<<487.0,1.0>--<261.0,0.0>>                                                                                                               
+                                                                                                                                                                       
+          * ecaron (U+011B): L<<487.0,1.0>--<261.0,0.0>>                                                                                                               
+                                                                                                                                                                       
+          * ecircumflex (U+00EA): L<<487.0,1.0>--<261.0,0.0>>                                                                                                          
+                                                                                                                                                                       
+          * edieresis (U+00EB): L<<487.0,1.0>--<261.0,0.0>>                                                                                                            
+                                                                                                                                                                       
+          * edotaccent (U+0117): L<<487.0,1.0>--<261.0,0.0>>                                                                                                           
+                                                                                                                                                                       
+          * egrave (U+00E8): L<<487.0,1.0>--<261.0,0.0>>                                                                                                               
+                                                                                                                                                                       
+          * eight (U+0038): L<<185.0,569.0>--<184.0,452.0>>                                                                                                            
+                                                                                                                                                                       
+          * eight (U+0038): L<<445.0,0.0>--<112.0,1.0>>                                                                                                                
+                                                                                                                                                                       
+          * emacron (U+0113): L<<487.0,1.0>--<261.0,0.0>>                                                                                                              
+                                                                                                                                                                       
+          * emdash (U+2014): L<<826.0,193.0>--<140.0,188.0>>                                                                                                           
+                                                                                                                                                                       
+          * eogonek (U+0119): L<<487.0,1.0>--<347.0,0.0>>                                                                                                              
+                                                                                                                                                                       
+          * g (U+0067): L<<457.0,-236.0>--<142.0,-238.0>>                                                                                                              
+                                                                                                                                                                       
+          * gbreve (U+011F): L<<457.0,-236.0>--<142.0,-238.0>>                                                                                                         
+                                                                                                                                                                       
+          * gcircumflex (U+011D): L<<457.0,-236.0>--<142.0,-238.0>>                                                                                                    
+                                                                                                                                                                       
+          * gdotaccent (U+0121): L<<457.0,-236.0>--<142.0,-238.0>>                                                                                                     
+                                                                                                                                                                       
+          * germandbls (U+00DF): L<<71.0,105.0>--<69.0,365.0>>                                                                                                         
+                                                                                                                                                                       
+          * h (U+0068): L<<226.0,382.0>--<225.0,124.0>>                                                                                                                
+                                                                                                                                                                       
+          * hbar (U+0127): L<<280.0,1.0>--<62.0,0.0>>                                                                                                                  
+                                                                                                                                                                       
+          * hcircumflex (U+0125): L<<226.0,382.0>--<225.0,124.0>>                                                                                                      
+                                                                                                                                                                       
+          * i (U+0069): L<<272.0,1.0>--<66.0,0.0>>                                                                                                                     
+                                                                                                                                                                       
+          * i.loclTRK: L<<228.0,326.0>--<229.0,154.0>>                                                                                                                 
+                                                                                                                                                                       
+          * iacute (U+00ED): L<<228.0,326.0>--<229.0,154.0>>                                                                                                           
+                                                                                                                                                                       
+          * icircumflex (U+00EE): L<<228.0,326.0>--<229.0,154.0>>                                                                                                      
+                                                                                                                                                                       
+          * idieresis (U+00EF): L<<228.0,326.0>--<229.0,154.0>>                                                                                                        
+                                                                                                                                                                       
+          * igrave (U+00EC): L<<228.0,326.0>--<229.0,154.0>>                                                                                                           
+                                                                                                                                                                       
+          * ij (U+0133): L<<272.0,1.0>--<66.0,0.0>>                                                                                                                    
+                                                                                                                                                                       
+          * imacron (U+012B): L<<228.0,326.0>--<229.0,154.0>>                                                                                                          
+                                                                                                                                                                       
+          * iogonek (U+012F): L<<228.0,326.0>--<229.0,154.0>>                                                                                                          
+                                                                                                                                                                       
+          * k (U+006B): L<<277.0,1.0>--<58.0,0.0>>                                                                                                                     
+                                                                                                                                                                       
+          * l (U+006C): L<<56.0,82.0>--<52.0,590.0>>                                                                                                                   
+                                                                                                                                                                       
+          * lacute (U+013A): L<<56.0,82.0>--<52.0,590.0>>                                                                                                              
+                                                                                                                                                                       
+          * lcaron (U+013E): L<<56.0,82.0>--<52.0,590.0>>                                                                                                              
+                                                                                                                                                                       
+          * lslash (U+0142): L<<56.0,416.0>--<55.0,590.0>>                                                                                                             
+                                                                                                                                                                       
+          * m (U+006D): L<<75.0,142.0>--<74.0,356.0>>                                                                                                                  
+                                                                                                                                                                       
+          * nine (U+0039): L<<333.0,448.0>--<334.0,568.0>>                                                                                                             
+                                                                                                                                                                       
+          * o (U+006F): L<<330.0,152.0>--<329.0,413.0>>                                                                                                                
+                                                                                                                                                                       
+          * o (U+006F): L<<352.0,0.0>--<131.0,-1.0>>                                                                                                                   
+                                                                                                                                                                       
+          * oacute (U+00F3): L<<330.0,152.0>--<329.0,413.0>>                                                                                                           
+                                                                                                                                                                       
+          * oacute (U+00F3): L<<352.0,0.0>--<131.0,-1.0>>                                                                                                              
+                                                                                                                                                                       
+          * ocircumflex (U+00F4): L<<330.0,152.0>--<329.0,413.0>>                                                                                                      
+                                                                                                                                                                       
+          * ocircumflex (U+00F4): L<<352.0,0.0>--<131.0,-1.0>>                                                                                                         
+                                                                                                                                                                       
+          * odieresis (U+00F6): L<<330.0,152.0>--<329.0,413.0>>                                                                                                        
+                                                                                                                                                                       
+          * odieresis (U+00F6): L<<352.0,0.0>--<131.0,-1.0>>                                                                                                           
+                                                                                                                                                                       
+          * oe (U+0153): L<<307.0,0.0>--<131.0,-1.0>>                                                                                                                  
+                                                                                                                                                                       
+          * oe (U+0153): L<<752.0,1.0>--<526.0,0.0>>                                                                                                                   
+                                                                                                                                                                       
+          * ograve (U+00F2): L<<330.0,152.0>--<329.0,413.0>>                                                                                                           
+                                                                                                                                                                       
+          * ograve (U+00F2): L<<352.0,0.0>--<131.0,-1.0>>                                                                                                              
+                                                                                                                                                                       
+          * ohungarumlaut (U+0151): L<<330.0,152.0>--<329.0,413.0>>                                                                                                    
+                                                                                                                                                                       
+          * ohungarumlaut (U+0151): L<<352.0,0.0>--<131.0,-1.0>>                                                                                                       
+                                                                                                                                                                       
+          * omacron (U+014D): L<<330.0,152.0>--<329.0,413.0>>                                                                                                          
+                                                                                                                                                                       
+          * omacron (U+014D): L<<352.0,0.0>--<131.0,-1.0>>                                                                                                             
+                                                                                                                                                                       
+          * one (U+0031): L<<106.0,141.0>--<103.0,529.0>>                                                                                                              
+                                                                                                                                                                       
+          * one (U+0031): L<<222.0,1.0>--<76.0,2.0>>                                                                                                                   
+                                                                                                                                                                       
+          * oslash (U+00F8): L<<330.0,152.0>--<329.0,324.0>>                                                                                                           
+                                                                                                                                                                       
+          * oslash (U+00F8): L<<352.0,0.0>--<155.0,-1.0>>                                                                                                              
+                                                                                                                                                                       
+          * otilde (U+00F5): L<<330.0,152.0>--<329.0,413.0>>                                                                                                           
+                                                                                                                                                                       
+          * otilde (U+00F5): L<<352.0,0.0>--<131.0,-1.0>>                                                                                                              
+                                                                                                                                                                       
+          * quotedbl (U+0022): L<<306.0,705.0>--<307.0,581.0>>                                                                                                         
+                                                                                                                                                                       
+          * s (U+0073): L<<35.0,1.0>--<36.0,128.0>>                                                                                                                    
+                                                                                                                                                                       
+          * s.ss01: L<<23.0,204.0>--<22.0,482.0>>                                                                                                                      
+                                                                                                                                                                       
+          * s.ss01: L<<320.0,0.0>--<90.0,2.0>>                                                                                                                         
+                                                                                                                                                                       
+          * sacute (U+015B): L<<35.0,1.0>--<36.0,128.0>>                                                                                                               
+                                                                                                                                                                       
+          * scaron (U+0161): L<<35.0,1.0>--<36.0,128.0>>                                                                                                               
+                                                                                                                                                                       
+          * scedilla (U+015F): L<<35.0,1.0>--<36.0,128.0>>                                                                                                             
+                                                                                                                                                                       
+          * scircumflex (U+015D): L<<35.0,1.0>--<36.0,128.0>>                                                                                                          
+                                                                                                                                                                       
+          * seven (U+0037): L<<280.0,1.0>--<130.0,0.0>>                                                                                                                
+                                                                                                                                                                       
+          * six (U+0036): L<<186.0,294.0>--<185.0,102.0>>                                                                                                              
+                                                                                                                                                                       
+          * six (U+0036): L<<188.0,550.0>--<187.0,379.0>>                                                                                                              
+                                                                                                                                                                       
+          * three (U+0033): L<<339.0,67.0>--<337.0,301.0>>                                                                                                             
+                                                                                                                                                                       
+          * two (U+0032): L<<449.0,2.0>--<37.0,0.0>>                                                                                                                   
+                                                                                                                                                                       
+          * u (U+0075): L<<314.0,154.0>--<315.0,362.0>>                                                                                                                
+                                                                                                                                                                       
+          * u (U+0075): L<<486.0,377.0>--<485.0,124.0>>                                                                                                                
+                                                                                                                                                                       
+          * u (U+0075): L<<71.0,520.0>--<207.0,521.0>>                                                                                                                 
+                                                                                                                                                                       
+          * uacute (U+00FA): L<<314.0,154.0>--<315.0,362.0>>                                                                                                           
+                                                                                                                                                                       
+          * uacute (U+00FA): L<<486.0,377.0>--<485.0,124.0>>                                                                                                           
+                                                                                                                                                                       
+          * uacute (U+00FA): L<<71.0,520.0>--<207.0,521.0>>                                                                                                            
+                                                                                                                                                                       
+          * ubreve (U+016D): L<<314.0,154.0>--<315.0,362.0>>                                                                                                           
+                                                                                                                                                                       
+          * ubreve (U+016D): L<<486.0,377.0>--<485.0,124.0>>                                                                                                           
+                                                                                                                                                                       
+          * ubreve (U+016D): L<<71.0,520.0>--<207.0,521.0>>                                                                                                            
+                                                                                                                                                                       
+          * ucircumflex (U+00FB): L<<314.0,154.0>--<315.0,362.0>>                                                                                                      
+                                                                                                                                                                       
+          * ucircumflex (U+00FB): L<<486.0,377.0>--<485.0,124.0>>                                                                                                      
+                                                                                                                                                                       
+          * ucircumflex (U+00FB): L<<71.0,520.0>--<207.0,521.0>>                                                                                                       
+                                                                                                                                                                       
+          * udieresis (U+00FC): L<<314.0,154.0>--<315.0,362.0>>                                                                                                        
+                                                                                                                                                                       
+          * udieresis (U+00FC): L<<486.0,377.0>--<485.0,124.0>>                                                                                                        
+                                                                                                                                                                       
+          * udieresis (U+00FC): L<<71.0,520.0>--<207.0,521.0>>                                                                                                         
+                                                                                                                                                                       
+          * ugrave (U+00F9): L<<314.0,154.0>--<315.0,362.0>>                                                                                                           
+                                                                                                                                                                       
+          * ugrave (U+00F9): L<<486.0,377.0>--<485.0,124.0>>                                                                                                           
+                                                                                                                                                                       
+          * ugrave (U+00F9): L<<71.0,520.0>--<207.0,521.0>>                                                                                                            
+                                                                                                                                                                       
+          * uhungarumlaut (U+0171): L<<314.0,154.0>--<315.0,362.0>>                                                                                                    
+                                                                                                                                                                       
+          * uhungarumlaut (U+0171): L<<486.0,377.0>--<485.0,124.0>>                                                                                                    
+                                                                                                                                                                       
+          * uhungarumlaut (U+0171): L<<71.0,520.0>--<207.0,521.0>>                                                                                                     
+                                                                                                                                                                       
+          * umacron (U+016B): L<<314.0,154.0>--<315.0,362.0>>                                                                                                          
+                                                                                                                                                                       
+          * umacron (U+016B): L<<486.0,377.0>--<485.0,124.0>>                                                                                                          
+                                                                                                                                                                       
+          * umacron (U+016B): L<<71.0,520.0>--<207.0,521.0>>                                                                                                           
+                                                                                                                                                                       
+          * uni0122 (U+0122): L<<20.0,209.0>--<22.0,499.0>>                                                                                                            
+                                                                                                                                                                       
+          * uni0123 (U+0123): L<<457.0,-236.0>--<142.0,-238.0>>                                                                                                        
+                                                                                                                                                                       
+          * uni0137 (U+0137): L<<277.0,1.0>--<58.0,0.0>>                                                                                                               
+                                                                                                                                                                       
+          * uni013B (U+013B): L<<238.0,518.0>--<237.0,168.0>>                                                                                                          
+                                                                                                                                                                       
+          * uni013C (U+013C): L<<56.0,82.0>--<52.0,590.0>>                                                                                                             
+                                                                                                                                                                       
+          * uni0145 (U+0145): L<<662.0,501.0>--<664.0,0.0>>                                                                                                            
+                                                                                                                                                                       
+          * uni0156 (U+0156): L<<326.0,698.0>--<563.0,700.0>>                                                                                                          
+                                                                                                                                                                       
+          * uni01F4 (U+01F4): L<<20.0,209.0>--<22.0,499.0>>                                                                                                            
+                                                                                                                                                                       
+          * uni01F5 (U+01F5): L<<457.0,-236.0>--<142.0,-238.0>>                                                                                                        
+                                                                                                                                                                       
+          * uni0218 (U+0218): L<<193.0,698.0>--<454.0,700.0>>                                                                                                          
+                                                                                                                                                                       
+          * uni0218 (U+0218): L<<446.0,0.0>--<55.0,1.0>>                                                                                                               
+                                                                                                                                                                       
+          * uni0218 (U+0218): L<<55.0,1.0>--<56.0,129.0>>                                                                                                              
+                                                                                                                                                                       
+          * uni0219 (U+0219): L<<35.0,1.0>--<36.0,128.0>>                                                                                                              
+                                                                                                                                                                       
+          * uni1E20 (U+1E20): L<<20.0,209.0>--<22.0,499.0>>                                                                                                            
+                                                                                                                                                                       
+          * uni1E21 (U+1E21): L<<457.0,-236.0>--<142.0,-238.0>>                                                                                                        
+                                                                                                                                                                       
+          * uni1E9E (U+1E9E): L<<110.0,481.0>--<109.0,609.0>>                                                                                                          
+                                                                                                                                                                       
+          * uni1E9E (U+1E9E): L<<113.0,105.0>--<111.0,345.0>>                                                                                                          
+                                                                                                                                                                       
+          * uni1EBD (U+1EBD): L<<487.0,1.0>--<261.0,0.0>>                                                                                                              
+                                                                                                                                                                       
+          * uogonek (U+0173): L<<314.0,154.0>--<315.0,362.0>>                                                                                                          
+                                                                                                                                                                       
+          * uogonek (U+0173): L<<486.0,377.0>--<485.0,124.0>>                                                                                                          
+                                                                                                                                                                       
+          * uogonek (U+0173): L<<71.0,520.0>--<207.0,521.0>>                                                                                                           
+                                                                                                                                                                       
+          * uring (U+016F): L<<314.0,154.0>--<315.0,362.0>>                                                                                                            
+                                                                                                                                                                       
+          * uring (U+016F): L<<486.0,377.0>--<485.0,124.0>>                                                                                                            
+                                                                                                                                                                       
+          * uring (U+016F): L<<71.0,520.0>--<207.0,521.0>>                                                                                                             
+                                                                                                                                                                       
+          * utilde (U+0169): L<<314.0,154.0>--<315.0,362.0>>                                                                                                           
+                                                                                                                                                                       
+          * utilde (U+0169): L<<486.0,377.0>--<485.0,124.0>>                                                                                                           
+                                                                                                                                                                       
+          * utilde (U+0169): L<<71.0,520.0>--<207.0,521.0>>                                                                                                            
+                                                                                                                                                                       
+          * w (U+0077): L<<377.0,0.0>--<195.0,1.0>>                                                                                                                    
+                                                                                                                                                                       
+          * wacute (U+1E83): L<<377.0,0.0>--<195.0,1.0>>                                                                                                               
+                                                                                                                                                                       
+          * wcircumflex (U+0175): L<<377.0,0.0>--<195.0,1.0>>                                                                                                          
+                                                                                                                                                                       
+          * wdieresis (U+1E85): L<<377.0,0.0>--<195.0,1.0>>                                                                                                            
+                                                                                                                                                                       
+          * wgrave (U+1E81): L<<377.0,0.0>--<195.0,1.0>>                                                                                                               
+                                                                                                                                                                       
+          * z (U+007A): L<<115.0,520.0>--<456.0,519.0>>                                                                                                                
+                                                                                                                                                                       
+          * z (U+007A): L<<412.0,0.0>--<22.0,-1.0>>                                                                                                                    
+                                                                                                                                                                       
+          * zacute (U+017A): L<<115.0,520.0>--<456.0,519.0>>                                                                                                           
+                                                                                                                                                                       
+          * zacute (U+017A): L<<412.0,0.0>--<22.0,-1.0>>                                                                                                               
+                                                                                                                                                                       
+          * zcaron (U+017E): L<<115.0,520.0>--<456.0,519.0>>                                                                                                           
+                                                                                                                                                                       
+          * zcaron (U+017E): L<<412.0,0.0>--<22.0,-1.0>>                                                                                                               
+                                                                                                                                                                       
+          * zdotaccent (U+017C): L<<115.0,520.0>--<456.0,519.0>>                                                                                                       
+                                                                                                                                                                       
+          * zdotaccent (U+017C): L<<412.0,0.0>--<22.0,-1.0>> [code: found-semi-vertical]                                                                               
+                                                                                                                                                                       
 
     Result: WARN
 
@@ -249,19 +670,6 @@
 
     Result: WARN
 
-  0%|                                                                                                                                      | 0/8248819 [00:00<?, ?it/s]
-  0%|                                                                                                                             | 4.00k/7.87M [00:00<03:42, 37.0kB/s]
-  0%|5                                                                                                                             | 36.0k/7.87M [00:00<00:47, 171kB/s]
-  1%|#3                                                                                                                            | 84.0k/7.87M [00:00<00:29, 276kB/s]
-  2%|###                                                                                                                            | 196k/7.87M [00:00<00:15, 530kB/s]
-  5%|######3                                                                                                                        | 404k/7.87M [00:00<00:08, 954kB/s]
- 10%|############8                                                                                                                 | 820k/7.87M [00:00<00:04, 1.74MB/s]
- 20%|#########################3                                                                                                   | 1.60M/7.87M [00:00<00:01, 3.30MB/s]
- 41%|##################################################9                                                                          | 3.21M/7.87M [00:01<00:00, 6.30MB/s]
- 79%|##################################################################################################6                          | 6.21M/7.87M [00:01<00:00, 12.8MB/s]
-100%|############################################################################################################################6| 7.85M/7.87M [00:01<00:00, 14.0MB/s]
-100%|#############################################################################################################################| 7.87M/7.87M [00:01<00:00, 6.76MB/s]
-
  >> com.google.fonts/check/soft_dotted
     Ensure soft_dotted characters lose their dot when combined with marks that replace the dot.
     with Brokken-Bold.ttf
@@ -283,15 +691,15 @@
                                                                                                                                                                        
          Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers).                                   
                                                                                                                                                                        
-         Your font does not cover the following languages that require the soft-dotted feature: Gulay (Latn, 250,478 speakers), Fur (Latn, 1,230,163 speakers),        
-         Ukrainian (Cyrl, 29,273,587 speakers), Cicipu (Latn, 44,000 speakers), Ebira (Latn, 2,200,000 speakers), Ejagham (Latn, 120,000 speakers), Sar (Latn,         
-         500,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Lugbara (Latn, 2,200,000 speakers), Basaa (Latn, 332,940 speakers), Kpelle, Guinea (Latn, 622,000  
-         speakers), Igbo (Latn, 27,823,640 speakers), Dan (Latn, 1,099,244 speakers), Avokaya (Latn, 100,000 speakers), Ma’di (Latn, 584,000 speakers), Mango (Latn,   
-         77,000 speakers), Bafut (Latn, 158,146 speakers), Mundani (Latn, 34,000 speakers), Kom (Latn, 360,685 speakers), Southern Kisi (Latn, 360,000 speakers),      
-         Makaa (Latn, 221,000 speakers), Vute (Latn, 21,000 speakers), Zapotec (Latn, 490,000 speakers), Ekpeye (Latn, 226,000 speakers), Aghem (Latn, 38,843          
-         speakers), Koonzime (Latn, 40,000 speakers), Nzakara (Latn, 50,000 speakers), Yala (Latn, 200,000 speakers), Ngbaka (Latn, 1,020,000 speakers), South         
-         Central Banda (Latn, 244,000 speakers), Dii (Latn, 71,000 speakers), Nateni (Latn, 100,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Navajo (Latn,      
-         166,319 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Mfumte (Latn, 79,000 speakers), Dutch (Latn, 31,709,104 speakers). [code: soft-dotted]          
+         Your font does not cover the following languages that require the soft-dotted feature: Nateni (Latn, 100,000 speakers), Ebira (Latn, 2,200,000 speakers),     
+         Mundani (Latn, 34,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Ejagham (Latn, 120,000 speakers), Mango (Latn, 77,000 speakers), Lugbara (Latn,       
+         2,200,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Makaa (Latn, 221,000 speakers), Ma’di (Latn, 584,000 speakers), Sar (Latn, 500,000 speakers),    
+         Yala (Latn, 200,000 speakers), Dan (Latn, 1,099,244 speakers), Southern Kisi (Latn, 360,000 speakers), Fur (Latn, 1,230,163 speakers), Koonzime (Latn,        
+         40,000 speakers), Ekpeye (Latn, 226,000 speakers), Cicipu (Latn, 44,000 speakers), Dii (Latn, 71,000 speakers), Aghem (Latn, 38,843 speakers), Ijo,           
+         Southeast (Latn, 2,471,000 speakers), Navajo (Latn, 166,319 speakers), Zapotec (Latn, 490,000 speakers), Bafut (Latn, 158,146 speakers), Basaa (Latn,         
+         332,940 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Vute (Latn, 21,000 speakers), Igbo (Latn, 27,823,640 speakers), South Central Banda (Latn,        
+         244,000 speakers), Gulay (Latn, 250,478 speakers), Mfumte (Latn, 79,000 speakers), Nzakara (Latn, 50,000 speakers), Dutch (Latn, 31,709,104 speakers), Kom    
+         (Latn, 360,685 speakers), Avokaya (Latn, 100,000 speakers), Ngbaka (Latn, 1,020,000 speakers), Bete-Bendi (Latn, 100,000 speakers). [code: soft-dotted]       
 
     Result: WARN
 
@@ -331,18 +739,30 @@
     WARN The following codepoints supported by the font are not covered by any subsets defined in the font's metadata file, and will never be served. You can solve    
          this by either manually adding additional subset declarations to METADATA.pb, or by editing the glyphset definitions.                                         
                                                                                                                                                                        
-          • U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal                                                                                         
-          • U+02D8 BREVE: try adding one of: yi, canadian-aboriginal                                                                                                   
-          • U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal                                                                                               
-          • U+02DB OGONEK: try adding one of: yi, canadian-aboriginal                                                                                                  
+          • U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh                                                                                         
+          • U+02D8 BREVE: try adding one of: canadian-aboriginal, yi                                                                                                   
+          • U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi                                                                                               
+          • U+02DB OGONEK: try adding one of: canadian-aboriginal, yi                                                                                                  
           • U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition                                                                                        
-          • U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, tifinagh, cherokee                                                                    
-          • U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic                                                                                            
-          • U+0307 COMBINING DOT ABOVE: try adding one of: syriac, tai-le, tifinagh, old-permic, canadian-aboriginal, coptic, malayalam, math                          
+          • U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, tifinagh, coptic                                                                    
+          • U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh                                                                                            
+          • U+0307 COMBINING DOT ABOVE: try adding one of: coptic, canadian-aboriginal, tai-le, malayalam, syriac, math, old-permic, tifinagh                          
           • U+030A COMBINING RING ABOVE: try adding syriac                                                                                                             
-          • U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee 14 more.                                                                          
-                                                                                                                                                                       
-         Use -F or --full-lists to disable shortening of long lists.                                                                                                   
+          • U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee                                                                                   
+          • U+030C COMBINING CARON: try adding one of: cherokee, tai-le                                                                                                
+          • U+0326 COMBINING COMMA BELOW: not included in any glyphset definition                                                                                      
+          • U+0327 COMBINING CEDILLA: not included in any glyphset definition                                                                                          
+          • U+0328 COMBINING OGONEK: not included in any glyphset definition                                                                                           
+          • U+1EBC LATIN CAPITAL LETTER E WITH TILDE: try adding vietnamese                                                                                            
+          • U+1EBD LATIN SMALL LETTER E WITH TILDE: try adding vietnamese                                                                                              
+          • U+2190 LEFTWARDS ARROW: try adding one of: symbols, math                                                                                                   
+          • U+2192 RIGHTWARDS ARROW: try adding one of: symbols, math                                                                                                  
+          • U+2194 LEFT RIGHT ARROW: try adding one of: symbols, math                                                                                                  
+          • U+2195 UP DOWN ARROW: try adding one of: symbols, math                                                                                                     
+          • U+2196 NORTH WEST ARROW: try adding one of: symbols, math                                                                                                  
+          • U+2197 NORTH EAST ARROW: try adding one of: symbols, math                                                                                                  
+          • U+2198 SOUTH EAST ARROW: try adding one of: symbols, math                                                                                                  
+          • U+2199 SOUTH WEST ARROW: try adding one of: symbols, math                                                                                                  
                                                                                                                                                                        
          Or you can add the above codepoints to one of the subsets supported by the font: latin, latin-ext [code: unreachable-subsetting]                              
 
@@ -389,7 +809,7 @@
                                                                                                                                                                        
          [code: failed-language-shaping]                                                                                                                               
 
-# Result: FAIL
+    Result: FAIL
 
  >> com.google.fonts/check/name/license
     Check copyright namerecords match license file.
@@ -413,26 +833,28 @@
                                                                                                                                                                        
     When in doubt, please choose OFL for new font projects.                                                                                                            
                                                                                                                                                                        
-    FAIL Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]                                                             
+    FAIL License file OFL.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 3 (WINDOWS) is not specified for that. Value was: "This Font Software is    
+         licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at:                                                               
+         https://openfontlicense.org" Must be changed to "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with  
+         a FAQ at: https://openfontlicense.org" [code: wrong]                                                                                                          
 
-# Result: FAIL
+    Result: FAIL
 
- >> com.google.fonts/check/fstype
-    Checking OS/2 fsType does not impose restrictions.
+ >> com.google.fonts/check/name/line_breaks
+    Name table entries should not contain line-breaks.
     with Brokken-Bold.ttf
 
     Rationale:                                                                
                                                                                                                                                                        
-    The fsType in the OS/2 table is a legacy DRM-related field. Fonts in the Google Fonts collection must have it set to zero (also known as "Installable              
-    Embedding"). This setting indicates that the fonts can be embedded in documents and permanently installed by applications on remote systems.                       
+    There are some entries on the name table that may include more than one line of text. The Google Fonts team, though, prefers to keep the name table entries short  
+    and simple without line breaks.                                                                                                                                    
                                                                                                                                                                        
-    More detailed info is available at: https://docs.microsoft.com/en-us/typography/opentype/spec/os2#fstype                                                           
+    For instance, some designers like to include the full text of a font license in the "copyright notice" entry, but for the GFonts collection this entry should      
+    only mention year, author and other basic info in a manner enforced by com.google.fonts/check/font_copyright                                                       
                                                                                                                                                                        
-    FAIL In this font fsType is set to 8 meaning that: The font may be embedded but must only be installed temporarily on other systems.                               
-                                                                                                                                                                       
-         No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]  
+    FAIL Name entry LICENSE_DESCRIPTION on platform WINDOWS contains a line-break. [code: line-break]                                                                  
 
-# Result: FAIL
+    Result: FAIL
 
  >> com.google.fonts/check/gasp
     Is the Grid-fitting and Scan-conversion Procedure ('gasp') table set to optimize rendering?
@@ -449,7 +871,7 @@
     FAIL Font is missing the 'gasp' table. Try exporting the font with autohinting enabled. If you are dealing with an unhinted font, it can be fixed by running the   
          fonts through the command 'gftools fix-nonhinting' GFTools is available at https://pypi.org/project/gftools/ [code: lacks-gasp]                               
 
-# Result: FAIL
+    Result: FAIL
 
  >> com.google.fonts/check/glyph_coverage
     Check Google Fonts glyph coverage.
@@ -465,9 +887,6 @@
                                                                                                                                                                        
                                                                                                                                                                        
           - 0x005E (CIRCUMFLEX ACCENT)                                                                                                                                 
-                                                                                                                                                                       
-                                                                                                                                                                       
-          - 0x00A0 (NO-BREAK SPACE)                                                                                                                                    
                                                                                                                                                                        
                                                                                                                                                                        
           - 0x00A2 (CENT SIGN)                                                                                                                                         
@@ -494,12 +913,21 @@
           - 0x00B7 (MIDDLE DOT)                                                                                                                                        
                                                                                                                                                                        
                                                                                                                                                                        
-          - 4 more.                                                                                                                                                    
+          - 0x00BA (MASCULINE ORDINAL INDICATOR)                                                                                                                       
                                                                                                                                                                        
                                                                                                                                                                        
-         Use -F or --full-lists to disable shortening of long lists. [code: missing-codepoints]                                                                        
+          - 0x00D7 (MULTIPLICATION SIGN)                                                                                                                               
+                                                                                                                                                                       
+                                                                                                                                                                       
+          - 0x00F7 (DIVISION SIGN)                                                                                                                                     
+                                                                                                                                                                       
+                                                                                                                                                                       
+          - 0x2122 (TRADE MARK SIGN)                                                                                                                                   
+                                                                                                                                                                       
+                                                                                                                                                                       
+         [code: missing-codepoints]                                                                                                                                    
 
-# Result: FAIL
+    Result: FAIL
 
  >> com.google.fonts/check/meta/script_lang_tags
     Ensure fonts have ScriptLangTags declared on the 'meta' table.
@@ -539,20 +967,6 @@
 
     Result: WARN
 
- >> com.google.fonts/check/name/version_format
-    Version format is correct in 'name' table?
-    with Brokken-Bold.ttf
-
-    Rationale:                                                                
-                                                                                                                                                                       
-    For Google Fonts, the version string must be in the format "Version X.Y". The version number must be greater than or equal to 1.000. (Additional information       
-    following the numeric version number is acceptable.)                                                                                                               
-                                                                                                                                                                       
-    FAIL The NameID.VERSION_STRING (nameID=5) value must follow the pattern "Version X.Y" with X.Y greater than or equal to 1.000. Current version string is:          
-         "Version 0.007" [code: bad-version-strings]                                                                                                                   
-
-# Result: FAIL
-
  >> com.google.fonts/check/smart_dropout
     Font enables smart dropout control in "prep" table instructions?
     with Brokken-Bold.ttf
@@ -576,24 +990,7 @@
     FAIL The 'prep' table does not contain TrueType instructions enabling smart dropout control. To fix, export the font with autohinting enabled, or run ttfautohint  
          on the font, or run the gftools fix-nonhinting script. [code: lacks-smart-dropout]                                                                            
 
-# Result: FAIL
-
- >> com.google.fonts/check/stylisticset_description
-    Ensure Stylistic Sets have description.
-    with Brokken-Bold.ttf
-
-    Rationale:                                                                
-                                                                                                                                                                       
-    Stylistic sets should provide description text. Programs such as InDesign, TextEdit and Inkscape use that info to display to the users so that they know what a    
-    given stylistic set offers.                                                                                                                                        
-                                                                                                                                                                       
-    More info: https://github.com/fonttools/fontbakery/issues/3155
-
-    WARN The stylistic set ss01 lacks a description string on the 'name' table. [code: missing-description]                                                            
-    WARN The stylistic set ss02 lacks a description string on the 'name' table. [code: missing-description]                                                            
-    WARN The stylistic set ss03 lacks a description string on the 'name' table. [code: missing-description]                                                            
-
-    Result: WARN
+    Result: FAIL
 
  >> com.google.fonts/check/vendor_id
     Checking OS/2 achVendID.
@@ -622,35 +1019,11 @@
 
     Result: WARN
 
- >> com.google.fonts/check/vertical_metrics
-    Check font follows the Google Fonts vertical metric schema
-    with Brokken-Bold.ttf
-
-    Rationale:                                                                
-                                                                                                                                                                       
-    This check generally enforces Google Fonts’ vertical metrics specifications. In particular: * lineGap must be 0 * Sum of hhea ascender + abs(descender) + linegap  
-    must be between 120% and 200% of UPM * Warning if sum is over 150% of UPM                                                                                          
-                                                                                                                                                                       
-    The threshold levels 150% (WARN) and 200% (FAIL) are somewhat arbitrarily chosen and may hint at a glaring mistake in the metrics calculations or UPM settings.    
-                                                                                                                                                                       
-    Our documentation includes further information: https://github.com/googlefonts/gf-docs/tree/main/VerticalMetrics                                                   
-                                                                                                                                                                       
-    More info: https://github.com/fonttools/fontbakery/pull/3762
-               https://github.com/fonttools/fontbakery/pull/3921
-
-    FAIL OS/2.sTypoLineGap is "100" it should be 0 [code: bad-OS/2.sTypoLineGap]                                                                                       
-    FAIL hhea.lineGap is "100" it should be 0 [code: bad-hhea.lineGap]                                                                                                 
-
-#  Result: FAIL
-
-
 Total:
     ERROR: 0
     FATAL: 0
-    FAIL: 12
-    WARN: 12
+    FAIL: 6
+    WARN: 11
     INFO: 8
-    SKIP: 120
-    PASS: 96
-
-`
+    SKIP: 118
+    PASS: 105
