@@ -23,7 +23,8 @@
 - the number glyphs need some rework/finetuning
 - all punctuations need some testing
 - the ogonek diacritic instance uses currently the `bottom`-anchor point, not the `ogonek`-anchor point
-- The builds are created using `fontmake` (`fontmake brokken.glyphs -i --output-dir ../fonts`). (The argument `-i` is given in order to interpolate between the masters, otherwise only the `thin` and `bold` masters are exported to `ttf`/`otf`)  See [here](https://github.com/googlefonts/fontmake). The output directory is not optimal at the moment.
+- The builds are created using `fontmake` (`fontmake -i -g ../sources/brokken.glyphs`) which needs to be run inside the `fonts` directory. (The argument `-i` is given in order to interpolate between the masters, otherwise only the `thin` and `bold` masters are exported to `ttf`/`otf`)  See [here](https://github.com/googlefonts/fontmake). 
+- note to self: Python3 virtual environment: `source myenv/bin/activate`
 
 ## Design/Approach
 The font attempts a hybrid between a brutalist aesthetic, at times reminiscent of a *Textura*, and a design that evokes the aesthetics of 1980s pen-and-paper role-playing games and fantasy novels. As a ‘creative constraint’, the font does not use any Bézier curves. The name ‘Brokken’ is derived from its rock-like appearance (German ‘Brocken’ = chunk, bolder), the approach that all letters are created by combining chunks, and that the overall design is strongly influenced by ‘broken’ typography (such as *Textura*, *Element*, etc.).
