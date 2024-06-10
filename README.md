@@ -1,12 +1,12 @@
 # BROKKEN
- Creating a crossover between a broken brutalist and an ‘esoteric’/fantasy font. You can find the current state (untested) as a usable `Brokken.otf` (OS X) and `Brokken.ttf` (WIN) in the `builds` folder. If you want to use the font in a semi-tested version please use one of the [stable releases](https://github.com/eisensafran/brokken/releases).
+ Creating a crossover between a broken brutalist and an ‘esoteric’/fantasy font. You can find the current state (untested) as a usable `Brokken.otf` (OS X) and `Brokken.ttf` (WIN) in the `fonts` folder. If you want to use the font in a semi-tested version please use one of the [stable releases](https://github.com/eisensafran/brokken/releases).
  _Brokken_ is developed in Glyphs 3 and doesn't use any Bézier curves at all. More info about its design and features can be found [here](https://andi-siess.de/brokken/).
 
  ![Teaser Brokken](documentation/brokken-teaser-2.jpg)
 
  ## Status Quo
  - The font is in an early beta state. **Use at your own risk.** All central European letters (including all diacritics) are supported. A lot of testing is neccessary. 
- - The *bold*, *semibold*, *regular*, *light*, and *thin* versions can be considered usable, an italic version is in development (currently only untested builds can be found in `builds`)
+ - The *bold*, *semibold*, *regular*, *light*, and *thin* versions can be considered usable, an italic version is in development (currently only untested builds can be found in `fonts`)
 - The font features two masters (*Brokken bold* and *Brokken thin*) where the other versions (*Brokken light*, *Brokken regular* and *Brokken semibold*) are interpolated from.
 - Currently there are 387 glyphs in each master, that feature a total of 359 (master *bold*) + 567 (master *thin*) kerning pairs (excluding group kerning).
 
@@ -23,7 +23,7 @@
 - the number glyphs need some rework/finetuning
 - all punctuations need some testing
 - the ogonek diacritic instance uses currently the `bottom`-anchor point, not the `ogonek`-anchor point
-- `fontmake` currently throws an error once a variable font is to be exported: `ERROR:fontTools.cu2qu.ufo:Glyphs named 'A.ss03' have different number of segments ERROR:fontTools.cu2qu.ufo:Glyphs named 'euro' have different number of segments` and `fontmake: Error: In 'brokken.glyphs' -> 'master_ufo/Brokken.designspace': Generating fonts from Designspace failed: fonts contains incompatible glyphs: 'A.ss03', 'euro'` when running the default command `fontmake brokken.glyphs -o variable`. See [here](https://github.com/googlefonts/fontmake).
+- The builds are created using `fontmake` (`fontmake brokken.glyphs -i --output-dir ../fonts`). (The argument `-i` is given in order to interpolate between the masters, otherwise only the `thin` and `bold` masters are exported to `ttf`/`otf`)  See [here](https://github.com/googlefonts/fontmake). The output directory is not optimal at the moment.
 
 ## Design/Approach
 The font attempts a hybrid between a brutalist aesthetic, at times reminiscent of a *Textura*, and a design that evokes the aesthetics of 1980s pen-and-paper role-playing games and fantasy novels. As a ‘creative constraint’, the font does not use any Bézier curves. The name ‘Brokken’ is derived from its rock-like appearance (German ‘Brocken’ = chunk, bolder), the approach that all letters are created by combining chunks, and that the overall design is strongly influenced by ‘broken’ typography (such as *Textura*, *Element*, etc.).
