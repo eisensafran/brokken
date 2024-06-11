@@ -15,12 +15,12 @@
 
 ## Known Issues & Open Questions
 - ~~I can't test if the Dutch ij/IJ ligature works properly since I don't know the language.~~ **UPDATE:** Thanks to Henrike I understood the problem a lot better: The key issue here is that a `íj́` is difficult to input on a standard keyboard, therefore it is neccessary that once a `í` following a `j` is detected the `j` needs to be replaced by `j́`. This is also true for captial letters. ([see here](https://nl.wikipedia.org/wiki/IJ_(digraaf))). Although I think I followed all recommendations from [here](https://glyphsapp.com/learn/localize-your-font-accented-dutch-ij) there is still an error report once I run `fontbakery check-googlefonts`. 
-```
-Language          FAIL messages
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-nl_Latn (Dutch)   Shaper didn't attach acutecomb to uni0237
-^                 Shaper didn't attach acutecomb to J
-```
+    ```
+    Language          FAIL messages
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    nl_Latn (Dutch)   Shaper didn't attach acutecomb to uni0237
+    ^                 Shaper didn't attach acutecomb to J
+    ```
 - Spacing and kerning is rudimentary at best, but it is in constant development.
 - Certain group kerning features apparently do not work under Windows – I can't figure out why. (Example string: `können`)
 - The font is primarily tested on OS X, therefore I don't know if the automatic hinting works 'good enough' for all letter combinations on Windows or Linux. I mitigated some issues by adding more sidebearing (+5 on each side) for each glyph in the `thin`-master.
