@@ -36,9 +36,8 @@
 - activate Python3 virtual environment: `source myenv/bin/activate`
 - run QA-tool fontbakery with Google Fonts template: `fontbakery check-googlefonts Brokken-Bold.ttf --full-lists` (reports can be found in the `reports` directory).
 - building the `*.ttf` font files with `fontmake` and applied autohinting will result in an error message from `fontbakery`: 
-    ```
-    FAIL This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will becrounded into an integer value.  
-    ```
+
+    > FAIL This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will becrounded into an integer value.  
     As far as I can see this flag can **not** be set inside Glyphsapp (see [here](https://forum.glyphsapp.com/t/font-bakery-hinting-error-message-bit-3-of-head-table/16210/6) and [here](https://groups.google.com/g/googlefonts-discuss/c/VIqqGTjtr5M?pli=1)). Therefore it seems necessary that this issue needs to be adressed by running `gftools fix-hinting` on each generated `ttf`. Useful `bash`-scripts can be found [here](https://forum.glyphsapp.com/t/font-bakery-hinting-error-message-bit-3-of-head-table/16210/6).
 
 
