@@ -29,7 +29,7 @@
 - the number glyphs need some rework/finetuning
 - all punctuations need some testing
 - the ogonek diacritic instance uses currently the `bottom`-anchor point, not the `ogonek`-anchor point
-- missing characters for Catalan (therefore failing the `GF_Latin_Core`-test by fontbakery)
+- ~~missing characters for Catalan (therefore failing the `GF_Latin_Core`-test by fontbakery)~~
 
 ## Useful Commands
 - The builds are created using `fontmake` (`fontmake -i -g ../sources/brokken.glyphs -a`) which needs to be run inside the `fonts` directory. (The argument `-i` is given in order to interpolate between the masters, otherwise only the `thin` and `bold` masters are exported to `ttf`/`otf`. The argument `-a` is given to apply basic autohinting to the `ttf` version.)  See [here](https://github.com/googlefonts/fontmake). 
