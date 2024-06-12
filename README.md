@@ -21,6 +21,12 @@
     nl_Latn (Dutch)   Shaper didn't attach acutecomb to uni0237
     ^                 Shaper didn't attach acutecomb to J
     ```
+    
+    This error does not occur when the font is exported by the Glyphsapp export function. Although a total different error appears: 
+
+    > FAIL The following glyphs have components which themselves are component glyphs: * uni01F4 * Gcircumflex * uni004A0301 * Jcircumflex * Ubreve * Aacute.ss01 * Abreve.ss01 * Acircumflex.ss01 * Adieresis.ss01 * Agrave.ss01 and 29 more.
+
+    I have a subtle suspicion that these errors appear due to my somewhat convoluted setup: the `component` characters (such as `acutecomb`) consist of components on its own. Maybe there is a mismatch with this configuration. After testing I can confirm this -- when converting the components within the `acutecomb` glyph into paths the font happily passes the Dutch language check in `fontbakery`. It is strange that this error does not occur with any other comb-characters.
 - Spacing and kerning is rudimentary at best, but it is in constant development.
 - Certain group kerning features apparently do not work under Windows – I can't figure out why. (Example string: `können`)
 - The font is primarily tested on OS X, therefore I don't know if the automatic hinting works 'good enough' for all letter combinations on Windows or Linux. I mitigated some issues by adding more sidebearing (+5 on each side) for each glyph in the `thin`-master.
@@ -38,7 +44,11 @@
 - building the `*.ttf` font files with `fontmake` and applied autohinting will result in an error message from `fontbakery`: 
 
     > FAIL This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will becrounded into an integer value.  
-    As far as I can see this flag can **not** be set inside Glyphsapp (see [here](https://forum.glyphsapp.com/t/font-bakery-hinting-error-message-bit-3-of-head-table/16210/6) and [here](https://groups.google.com/g/googlefonts-discuss/c/VIqqGTjtr5M?pli=1)). Therefore it seems necessary that this issue needs to be adressed by running `gftools fix-hinting` on each generated `ttf`. Useful `bash`-scripts can be found [here](https://forum.glyphsapp.com/t/font-bakery-hinting-error-message-bit-3-of-head-table/16210/6).
+    
+    As far as I can see this flag can **not** be set inside Glyphsapp (see [here](https://forum.glyphsapp.com/t/font-bakery-hinting-error-message-bit-3-of-head-table/16210/6) and [here](https://groups.google.com/g/googlefonts-discuss/c/VIqqGTjtr5M?pli=1)). Therefore it seems necessary that this issue needs to be adressed by running `gftools fix-hinting` on each generated `ttf`. Useful `bash`-scripts can be found [here](https://forum.glyphsapp.com/t/font-bakery-hinting-error-message-bit-3-of-head-table/16210/6). 
+
+
+
 
 
 ## Design/Approach
