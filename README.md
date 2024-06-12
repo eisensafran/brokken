@@ -26,7 +26,7 @@
 
     > FAIL The following glyphs have components which themselves are component glyphs: * uni01F4 * Gcircumflex * uni004A0301 * Jcircumflex * Ubreve * Aacute.ss01 * Abreve.ss01 * Acircumflex.ss01 * Adieresis.ss01 * Agrave.ss01 and 29 more.
 
-    I have a subtle suspicion that these errors appear due to my somewhat convoluted setup: the `component` characters (such as `acutecomb`) consist of components on its own. Maybe there is a mismatch with this configuration. After testing I can confirm this -- when converting the components within the `acutecomb` glyph into paths the font happily passes the Dutch language check in `fontbakery`. It is strange that this error does not occur with any other comb-characters.
+    I have a subtle suspicion that these errors appear due to my somewhat convoluted setup: the `component` characters (such as `acutecomb`) consist of components on its own. Maybe there is a mismatch with this configuration. After testing I can confirm this -- when converting the components within the `acutecomb` glyph into paths the font happily passes the Dutch language check in `fontbakery`. It is strange that this error does not occur with any other comb-characters. **UPDATE**: Issue seems to be resolved.
 - Spacing and kerning is rudimentary at best, but it is in constant development.
 - Certain group kerning features apparently do not work under Windows – I can't figure out why. (Example string: `können`)
 - The font is primarily tested on OS X, therefore I don't know if the automatic hinting works 'good enough' for all letter combinations on Windows or Linux. I mitigated some issues by adding more sidebearing (+5 on each side) for each glyph in the `thin`-master.
@@ -35,6 +35,7 @@
 - the number glyphs need some rework/finetuning
 - all punctuations need some testing
 - the ogonek diacritic instance uses currently the `bottom`-anchor point, not the `ogonek`-anchor point
+- ~~the `lcaron`, `dcaron`, `Lcaron` and `Dcaron` are composed from the standard `caroncomb`-component, but need their own `caroncomb.alt`-component instead, otherwise the shape of the characters are wrong/off. See [here](https://forum.glyphsapp.com/t/lcaron-caron-or-apostrophe/6131).~~
 - ~~missing characters for Catalan (therefore failing the `GF_Latin_Core`-test by fontbakery)~~
 
 ## Useful Commands
@@ -45,7 +46,50 @@
 
     > FAIL This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will becrounded into an integer value.  
     
-    As far as I can see this flag can **not** be set inside Glyphsapp (see [here](https://forum.glyphsapp.com/t/font-bakery-hinting-error-message-bit-3-of-head-table/16210/6) and [here](https://groups.google.com/g/googlefonts-discuss/c/VIqqGTjtr5M?pli=1)). Therefore it seems necessary that this issue needs to be adressed by running `gftools fix-hinting` on each generated `ttf`. Useful `bash`-scripts can be found [here](https://forum.glyphsapp.com/t/font-bakery-hinting-error-message-bit-3-of-head-table/16210/6). 
+    As far as I can see this flag can **not** be set inside Glyphsapp (see [here](https://forum.glyphsapp.com/t/font-bakery-hinting-error-message-bit-3-of-head-table/16210/6) and [here](https://groups.google.com/g/googlefonts-discuss/c/VIqqGTjtr5M?pli=1)). Therefore it seems necessary that this issue needs to be adressed by running `gftools fix-hinting` on each generated `ttf`. Useful `bash`-scripts can be found [here](https://forum.glyphsapp.com/t/font-bakery-hinting-error-message-bit-3-of-head-table/16210/6). To streamline this process I condensed the whole building and testing process into one bash script:
+
+    ```
+    #!/bin/bash
+
+    # initialize python3 virtual environment
+    source myenv/bin/activate
+
+    # clean the export folder
+    echo "deleting all contents of fonts folder"
+    rm -rf $HOME/Documents/GitHub/brokken/fonts/*
+
+    # build the font using fontmake
+    echo "building font with fontmake"
+    cd $HOME/Documents/GitHub/brokken/fonts
+    fontmake -i -g ../sources/brokken.glyphs -a
+
+    # correct ttf version with gftools
+    echo "gftools"
+    cd $HOME/Documents/GitHub/brokken/fonts/autohinted/instance_ttf
+    for font in *.ttf
+    do
+        gftools fix-hinting $font;
+        if [ -f "$font.fix" ]; then mv "$font.fix" $font; fi
+    done
+
+    # check font with fontbakery
+    echo "checking font with fontbakery"
+    fontbakery check-googlefonts Brokken-Bold.ttf --full-lists
+
+    # cleanup
+    echo "moving autohinted contents to default instance_ttf folder"
+    mkdir -p $HOME/Documents/GitHub/brokken/fonts/instance_ttf
+    cp -r $HOME/Documents/GitHub/brokken/fonts/autohinted/instance_ttf/*.ttf $HOME/Documents/GitHub/brokken/fonts/instance_ttf
+    rm -rf $HOME/Documents/GitHub/brokken/fonts/autohinted
+
+    echo "renaming instance_ttf and instance_otf to ttf and otf"
+    mv $HOME/Documents/GitHub/brokken/fonts/instance_ttf $HOME/Documents/GitHub/brokken/fonts/ttf 
+    mv $HOME/Documents/GitHub/brokken/fonts/instance_otf $HOME/Documents/GitHub/brokken/fonts/otf 
+
+    # make a copy of the otf files in the document directory for testing in InDesign
+    echo "copying the contents of otf folder to the InDesign test folder"
+    cp -r $HOME/Documents/GitHub/brokken/fonts/otf/*.otf $HOME/Documents/GitHub/brokken/test/"brokken-test Ordner"/"Document fonts"
+    ```
 
 
 
