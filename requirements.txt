@@ -1,2 +1,3 @@
 # requirements for building brokken.glyphs
 fontmake
+gftools

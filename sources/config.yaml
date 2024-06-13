@@ -1,7 +1,5 @@
 sources:
   - brokken.glyphs
-  - brokken_italic.glyphs
 axisOrder:
   - wght
-  - ital
 familyName: Brokken
