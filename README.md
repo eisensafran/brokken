@@ -6,9 +6,9 @@
 
  ## Status Quo
  - The font is in an early beta state. **Use at your own risk.** All central European letters (including all diacritics) are supported. A lot of testing is still neccessary. 
- - The *bold*, *semibold*, *regular*, *light*, and *thin* versions can be considered usable, an *italic* version is in development (currently only untested builds can be found in `fonts`)
+ - The *bold*, *semibold*, *regular*, *light*, and *thin* versions can be considered usable, an *italic* version is in development (currently untested builds can be found in `fonts`)
 - The font features two masters (*Brokken bold* and *Brokken thin*) where the other versions (*Brokken light*, *Brokken regular* and *Brokken semibold*) are interpolated from.
-- Currently there are 387 glyphs in each master, that feature a total of 359 (master *bold*) + 567 (master *thin*) kerning pairs (excluding group kerning).
+- Currently there are 412 glyphs in each master, that feature a total of 549 (master *bold*) + 663 (master *thin*) kerning pairs (excluding group kerning).
 
 ![Glyph Table](documentation/brokken-bold-palette-2.png)
 ![Glyph Table](documentation/brokken-thin-palette-2.png)
