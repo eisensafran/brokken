@@ -1,5 +1,7 @@
 # BROKKEN
  Creating a crossover between a broken brutalist and an ‘esoteric’/fantasy font. You can find the current state (untested) as a usable `Brokken.otf` (OS X) and `Brokken.ttf` (WIN) in the `fonts` folder. If you want to use the font in a semi-tested version please use one of the [stable releases](https://github.com/eisensafran/brokken/releases).
+ > [!WARNING]  
+ > Please make sure that you pick the correct file for your operating system: `*.otf` for Mac OS X and `*.ttf` for Windows.  
  _Brokken_ is developed in Glyphs 3 and doesn't use any Bézier curves at all. More info about its design and features can be found [here](https://andi-siess.de/brokken/).
 
  ![Teaser Brokken](documentation/brokken-teaser-2.jpg)
