@@ -7,7 +7,7 @@ $,
 aorem",
 "Ö",
 "OÔ",
-Michone
+MichaelA
 );
 axes = (
 {
@@ -11722,7 +11722,7 @@ metricRight = T;
 glyphname = a;
 kernLeft = a;
 kernRight = ar;
-lastChange = "2024-06-24 11:56:06 +0000";
+lastChange = "2024-06-24 12:15:40 +0000";
 layers = (
 {
 anchors = (
@@ -11779,9 +11779,9 @@ nodes = (
 {
 closed = 1;
 nodes = (
-(513,0,l),
-(514,108,l),
-(457,144,l),
+(506,0,l),
+(514,95,l),
+(457,131,l),
 (465,475,l),
 (321,486,l),
 (369,402,l),
