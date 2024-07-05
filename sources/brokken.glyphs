@@ -3,7 +3,7 @@
 .formatVersion = 3;
 DisplayStrings = (
 "maßjeck",
-Malefitz
+"glücklichat"
 );
 axes = (
 {
@@ -11716,7 +11716,7 @@ metricRight = T;
 glyphname = a;
 kernLeft = a;
 kernRight = ar;
-lastChange = "2024-07-05 18:36:38 +0000";
+lastChange = "2024-07-05 18:43:14 +0000";
 layers = (
 {
 anchors = (
@@ -30399,6 +30399,7 @@ m01 = {
 "@MMK_L_A" = {
 "@MMK_R_A" = -10;
 "@MMK_R_O" = 20;
+"@MMK_R_a" = 20;
 "@MMK_R_c" = 20;
 "@MMK_R_h" = 10;
 "@MMK_R_oe" = 10;
