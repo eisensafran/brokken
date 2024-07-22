@@ -11,7 +11,7 @@
  - The font is in an early beta state. **Use at your own risk.** All central European letters (including all diacritics) are supported. A lot of testing is still neccessary. 
  - The *bold*, *semibold*, *regular*, *light*, and *thin* versions can be considered usable, an *italic* version is in development (currently untested builds can be found in `fonts`)
 - The font features two masters (*Brokken bold* and *Brokken thin*) where the other versions (*Brokken light*, *Brokken regular* and *Brokken semibold*) are interpolated from.
-- Currently there are 412 glyphs in each master, that feature a total of 549 (master *bold*) + 663 (master *thin*) kerning pairs (excluding group kerning).
+- Currently there are 412 glyphs in each master, that feature a total of 669 (master *bold*) + 781 (master *thin*) kerning pairs (excluding group kerning).
 
 ![Glyph Table](documentation/brokken-bold-palette-2.png)
 ![Glyph Table](documentation/brokken-thin-palette-2.png)
@@ -34,7 +34,7 @@
 - Certain group kerning features apparently do not work under Windows – I can't figure out why. (Example string: `können`)
 - The font is primarily tested on OS X, therefore I don't know if the automatic hinting works 'good enough' for all letter combinations on Windows or Linux. I mitigated some issues by adding more sidebearing (+5 on each side) for each glyph in the `thin`-master.
 - ~~Critical: The horizontal scaling of the letters/glyphs needs to be adjusted, the font is too tall at the moment~~ ~~**UPDATE:** Did some rescaling, metrics still need to be adjusted since the descenders are now cut off.~~ **UPDATE 2:** Metrics seem to be OK for now (tested with OS X and Windows 10). **TODO:** Metrics need to be adjusted to comply with [this](https://googlefonts.github.io/gf-guide/metrics.html).
-- I can't estimate if the shapes of the Icelandic letters (such as Þ, þ or ð) are recognizable for native speakers/readers since I don't know the language
+- I can't estimate if the shapes of the Icelandic letters (such as Þ, þ or ð) are recognizable for native speakers/readers since I don't know the language. The same is true for letters like ə, Ə, Ħ, ħ, ľ as well as some diacritics such as ğ, ę, ť, ẅ etc. 
 - the number glyphs need some rework/finetuning
 - all punctuations need some testing
 - the ogonek diacritic instance uses currently the `bottom`-anchor point, not the `ogonek`-anchor point
